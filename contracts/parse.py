@@ -4,7 +4,7 @@ import random
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 CONTRACT_DIR = SCRIPT_DIR + "/mainnet/"
 import requests, json
-
+import re
 
 # interactively search in CONTRACT_DIR, find all files ending with .sol
 # and print the file name
@@ -94,7 +94,74 @@ def filterFunctionABI(result):
 
 
 
+def countFrequency(nft_marketplace_contracts):
+    function_frequency = {}
+    ce = CrawlEtherscan()
+    for contract in nft_marketplace_contracts:
+        # extract its address and name
+        contract_array = contract.split("_")
+        address = contract_array[0]
+        address = address.split("/")[-1]
+        name = contract_array[1].split(".")[0]
+        print("Address: " + address)
+        print("Name: " + name)
+        functionABI = ce.Contract2ABI( "0x" + address)
+        print("Function ABI: ")
+        new_functionABI = filterFunctionABI(functionABI)
+        path = "contracts/mainnet/" + contract
+        for function in new_functionABI:
+            if function not in function_frequency:
+                function_frequency[function] = [path]
+            else:
+                function_frequency[function].append(path)
+    # sort the function_frequency
+    function_frequency_list = sorted(function_frequency.items(), key=lambda x: len(x[1]), reverse=True)
+    print("Function frequency list: ")
+    for entry in function_frequency_list:
+        print(entry[0], "frequency: ", len(entry[1]))
+        for path in entry[1]:
+            print("[Code File]({})".format(path))
+
         
+def collectInvariantGuards(nft_marketplace_contracts):
+    all_require_statements = []
+    for nft_marketplace_contract in nft_marketplace_contracts:
+        path = CONTRACT_DIR + nft_marketplace_contract
+
+        lines = []
+        with open(path, 'r') as f:
+            lines = f.readlines()
+
+        # find all require statements
+        # start from require keyword and end with ;
+        # the line should not contain // or /* at the start of the line
+        require_statements = []
+        for i in range(len(lines)):
+            line = lines[i]
+            line = line.strip()
+            if line.startswith("require")  and ";" in line and (not line.startswith("//")) and (not line.startswith("/*")):
+                # prune all comments after ;
+                line = line.split(";")[0]
+                # remove all error messages in line inside ""
+                # remove all space in the statement
+                line = re.sub(' ', '', line)
+                # remove all contents within ""
+                line = re.sub(r'".*?"', r'""', line)
+                line = re.sub(r'\'.*?\'', r'""', line)
+                
+                
+                require_statements.append(line)
+                # print(line)
+                if line not in all_require_statements:
+                    all_require_statements.append(line)
+                    print(line)
+    
+    print("all require statements: ")
+    print(len(all_require_statements))
+        
+            
+            
+
 
 
 
@@ -113,38 +180,8 @@ if __name__ == "__main__":
     #     print(command)
     #     os.system(command)
 
+    # print(len(nft_marketplace_contracts))
+    # countFrequency(nft_marketplace_contracts)   
+    collectInvariantGuards(nft_marketplace_contracts) 
 
-
-    print(len(nft_marketplace_contracts))
-
-    function_frequency = {}
-
-    ce = CrawlEtherscan()
-    for contract in nft_marketplace_contracts:
-        # extract its address and name
-        contract_array = contract.split("_")
-        address = contract_array[0]
-        address = address.split("/")[-1]
-        name = contract_array[1].split(".")[0]
-        print("Address: " + address)
-        print("Name: " + name)
-        functionABI = ce.Contract2ABI( "0x" + address)
-        print("Function ABI: ")
-        # print(functionABI)
-
-        new_functionABI = filterFunctionABI(functionABI)
-        path = "contracts/mainnet/" + contract
-        for function in new_functionABI:
-            if function not in function_frequency:
-                function_frequency[function] = [path]
-            else:
-                function_frequency[function].append(path)
-    
-    # sort the function_frequency
-    function_frequency_list = sorted(function_frequency.items(), key=lambda x: len(x[1]), reverse=True)
-    print("Function frequency list: ")
-    for entry in function_frequency_list:
-        print(entry[0], "frequency: ", len(entry[1]))
-        for path in entry[1]:
-            print("[Code File]({})".format(path))
 
