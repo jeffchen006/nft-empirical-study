@@ -127,7 +127,7 @@ def collectInvariantGuards(nft_marketplace_contracts):
     all_require_statements = []
     for nft_marketplace_contract in nft_marketplace_contracts:
         path = CONTRACT_DIR + nft_marketplace_contract
-
+        relative_path = "contracts/mainnet/" + nft_marketplace_contract
         lines = []
         with open(path, 'r') as f:
             lines = f.readlines()
@@ -153,7 +153,9 @@ def collectInvariantGuards(nft_marketplace_contracts):
                 require_statements.append(line)
                 # print(line)
                 if line not in all_require_statements:
+                    
                     all_require_statements.append(line)
+                    print("[Code File]({}#L{})".format(relative_path, i+1))
                     print(line)
     
     print("all require statements: ")
