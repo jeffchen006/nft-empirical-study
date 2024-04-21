@@ -122,12 +122,75 @@ def countFrequency(nft_marketplace_contracts):
         for path in entry[1]:
             print("[Code File]({})".format(path))
 
+
+
+def statement2Tag(statement):
+    tag = "Uncategorizable"
+    statement = statement.lower()
+    if statement.startswith("//"):
+        tag = "Ignore: comment"
+    elif "require(false);" in statement:
+        tag = "Ignore: always false"
+    elif "require(true);" in statement:
+        tag = "Ignore: always true"
+    elif re.search(r"require\(([abcxyz_+-/*)\(\)><=]+)\)" , statement, re.IGNORECASE):
+        tag = "Ignore: safe math"
+    elif re.search(r"require\(([abcxyz_+-/*)\(\)><=]+)\," , statement, re.IGNORECASE):
+        tag = "Ignore: safe math"
+    elif "!=0" in statement or ">0" in statement or ">=0" in statement or "==0" in statement:
+        tag = "Ignore: check with 0"
+            
+    # Suppose no arithmetic operations between the first ! and the first comma in statement
+    elif re.search(r"require\(([a-zA-Z_.&|!\[\]]+)," , statement, re.IGNORECASE):
+        # tag = "Ignore: check status (belong to enforce specification)"
+        tag = "enforce specification"
+    
+    # Suppose no arithmetic operations between the first ! and the first comma in statement
+    elif re.search(r"require\(([a-zA-Z_.&|!\[\]]+)\)" , statement, re.IGNORECASE):
+        # tag = "Ignore: check status"
+        tag = "enforce specification"
         
+    else:
+        #  status check 
+        if "sender" in statement and "owner" in statement:
+            tag = "sender ownerOf"
+        elif "sender" in statement:
+            tag = "sender permission checks"
+        elif "owner" in statement:
+            tag = "owner permission checks"
+        elif "address(0)" in statement:
+            tag = "address(0)"
+        elif "time" in statement or "period" in statement:
+            tag = "time control"
+        elif "_offerId" in statement:
+            tag = "offerId control"
+        elif "whitelist" in statement:
+            tag = "whitelist control"
+        elif "value" in statement:
+            tag = "msg.value control"
+        elif "iscontract" in statement:
+            tag = "EOA validation"
+        elif "balance" in statement and (">" in statement or "<" in statement):
+            tag = "balance control"
+        elif "length" in statement:
+            tag = "array length control"
+        elif "amount" in statement and ("==" in statement or "!=" in statement):
+            tag = "amount enforcement"
+
+
+
+    return tag 
+
+
+
+
 def collectInvariantGuards(nft_marketplace_contracts):
     all_require_statements = []
+    all_clickables = []
+
     for nft_marketplace_contract in nft_marketplace_contracts:
         path = CONTRACT_DIR + nft_marketplace_contract
-        relative_path = "contracts/mainnet/" + nft_marketplace_contract
+        relative_path = "../../contracts/mainnet/" + nft_marketplace_contract
         lines = []
         with open(path, 'r') as f:
             lines = f.readlines()
@@ -149,17 +212,37 @@ def collectInvariantGuards(nft_marketplace_contracts):
                 line = re.sub(r'".*?"', r'""', line)
                 line = re.sub(r'\'.*?\'', r'""', line)
                 
-                
                 require_statements.append(line)
                 # print(line)
                 if line not in all_require_statements:
-                    
                     all_require_statements.append(line)
-                    print("[Code File]({}#L{})".format(relative_path, i+1))
-                    print(line)
+                    clickable = "[Code File]({}#L{})".format(relative_path, i+1)
+                    all_clickables.append(clickable)
+
+                    # print(clickable)
+                    # tag = statement2Tag(line)
+                    # print(tag)
+                    # print(line)
     
-    print("all require statements: ")
-    print(len(all_require_statements))
+
+    for ii in range(len(all_require_statements)):
+        tag = statement2Tag(all_require_statements[ii])
+        print(tag)
+        print(all_require_statements[ii])
+        print(all_clickables[ii])
+        print("")
+        file = SCRIPT_DIR + "/../04212024/invariants/" + tag + ".md"
+        with open(file, 'a') as f:
+            f.write(all_require_statements[ii] + "\n")
+            f.write(all_clickables[ii] + "\n")
+            f.write("\n")
+
+
+    # for require_statement in all_require_statements:
+    #     tag = statement2Tag(require_statement)
+    #     print(tag)
+    #     print(require_statement)
+    #     print("")
         
             
             

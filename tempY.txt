@@ -1,1442 +1,2163 @@
+Path: /home/zhiychen/Documents/smart-contract-sanctuary-ethereum/contracts/cache.json
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L146)
+isSenderOwner
 require(_nft.ownerOf(_tokenId)==msg.sender,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L180)
+Ignore: enforce specification
 require(marketplaceEnabled,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L185)
+Ignore: enforce specification
 require(_binConf.creator==_nft.ownerOf(_tokenId),"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L186)
+Ignore: enforce specification
 require(_binConf.erc20==_buyItNowToken,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L187)
+Ignore: enforce specification
 require(_binConf.amount==_buyItNowAmount,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L226)
+isSenderOwner
 require(msg.sender==_nft.ownerOf(_tokenId),"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L227)
+Ignore: enforce specification
 require(_offer.offerERC20==_offerToken,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L228)
+Ignore: enforce specification
 require(_offer.amount==_offerAmount,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L270)
+Ignore: enforce specification
 require(_nft.ownerOf(_tokenId)!=msg.sender,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L273)
+CallValueUpperBound
 require(msg.value>addOfferFee,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L274)
+Ignore: enforce specification
 require(validOfferERC20[address(weth)],"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L288)
+filtered
 require(msg.value==addOfferFee,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L289)
+Ignore: protocol-specific
 require(validOfferERC20[_offerToken],"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L298)
+Ignore: enforce specification
 require(_success,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L310)
+filtered
 require(expiration==0||expiration>block.timestamp,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L341)
+isSenderOwner
 require(_offer.owner==msg.sender,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L377)
+filtered
 require(_offer.owner!=address(0),"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L412)
+CallValueUpperBound
 require(msg.value>=_amount,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L419)
+Ignore: enforce specification
 require(_royaltySuccess,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L426)
+Ignore: enforce specification
 require(_treasSuccess,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L430)
+TokenOutUpperBound
 require(address(this).balance>=_before-_amount)
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L460)
+Ignore: enforce specification
 require(_nft.ownerOf(_tokenId)==_oldOwner,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L492)
+Ignore: enforce specification
 require(validOfferERC20[_token]!=_isValid,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L510)
+filtered
 require(_percent<=(DENOMENATOR*10)/100,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L523)
+Ignore: enforce specification
 require(marketplaceEnabled!=_isEnabled,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L533)
+filtered
 require(_amount>0)
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L592)
+Ignore: enforce specification
 require(owner()==_msgSender(),"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L611)
+filtered
 require(newOwner!=address(0),"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L785)
+filtered
 require(oldAllowance>=value,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L804)
+Ignore: enforce specification
 require(nonceAfter==nonceBefore+1,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L821)
+Ignore: protocol-specific
 require(abi.decode(returndata,(bool)),"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L996)
+TokenOutUpperBound
 require(address(this).balance>=amount,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L999)
+filtered
 require(success,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L1069)
+DataFlow
 require(address(this).balance>=value,"")
 [Code File](contracts/mainnet/c7/C7ddD330A9aE4870d4100363846fE84b40d01e37_NFTMarketplace.sol#L1070)
+Ignore: protocol-specific
 require(isContract(target),"")
 [Code File](contracts/mainnet/c7/c731d111023b11EB39606B672Be35f20C6D88Af1_NFTMarketplace.sol#L296)
+filtered
 require(msg.value==price,"")
 [Code File](contracts/mainnet/c7/c731d111023b11EB39606B672Be35f20C6D88Af1_NFTMarketplace.sol#L389)
+filtered
 require(isTokenAllowed(token),"")
 [Code File](contracts/mainnet/c7/c731d111023b11EB39606B672Be35f20C6D88Af1_NFTMarketplace.sol#L484)
+Ignore: protocol-specific
 require(!paused(),"")
 [Code File](contracts/mainnet/c7/c731d111023b11EB39606B672Be35f20C6D88Af1_NFTMarketplace.sol#L641)
+Ignore: enforce specification
 require(sent,"")
 [Code File](contracts/mainnet/c7/c731d111023b11EB39606B672Be35f20C6D88Af1_NFTMarketplace.sol#L1139)
+filtered
 require(value==0,"")
 [Code File](contracts/mainnet/c7/c731d111023b11EB39606B672Be35f20C6D88Af1_NFTMarketplace.sol#L1454)
+Ignore: enforce specification
 require(_status!=_ENTERED,"")
 [Code File](contracts/mainnet/c7/c731d111023b11EB39606B672Be35f20C6D88Af1_NFTMarketplace.sol#L1545)
+Ignore: protocol-specific
 require(paused(),"")
 [Code File](contracts/mainnet/c7/c731d111023b11EB39606B672Be35f20C6D88Af1_NFTMarketplace.sol#L1867)
+Ignore: enforce specification
 require(account==_msgSender(),"")
 [Code File](contracts/mainnet/b9/b9dccd2226dd494edd39f4f5dbbc0396c2cab369_EKotketDeposit.sol#L288)
+Ignore: safe math
 require(b<=a,errorMessage)
 [Code File](contracts/mainnet/b9/b9dccd2226dd494edd39f4f5dbbc0396c2cab369_EKotketDeposit.sol#L311)
+filtered
 require(b>0,errorMessage)
 [Code File](contracts/mainnet/b9/b9dccd2226dd494edd39f4f5dbbc0396c2cab369_EKotketDeposit.sol#L1116)
+Ignore: protocol-specific
 require(hasRole(DEFAULT_ADMIN_ROLE,_msgSender())||hasRole(SC_GATEWAY_ORACLE_ROLE,_msgSender()),"")
 [Code File](contracts/mainnet/b9/b9dccd2226dd494edd39f4f5dbbc0396c2cab369_EKotketDeposit.sol#L1121)
+Ignore: protocol-specific
 require(hasRole(DEFAULT_ADMIN_ROLE,_msgSender())||hasRole(SC_MINTER_ROLE,_msgSender()),"")
 [Code File](contracts/mainnet/b9/b9dccd2226dd494edd39f4f5dbbc0396c2cab369_EKotketDeposit.sol#L1126)
+Ignore: protocol-specific
 require(hasRole(DEFAULT_ADMIN_ROLE,_msgSender()),"")
 [Code File](contracts/mainnet/b9/b9dccd2226dd494edd39f4f5dbbc0396c2cab369_EKotketDeposit.sol#L1138)
+filtered
 require(_governanceAdress!=address(0),"")
 [Code File](contracts/mainnet/b9/b9dccd2226dd494edd39f4f5dbbc0396c2cab369_EKotketDeposit.sol#L1161)
+Ignore: protocol-specific
 require(kotketGatewayOracle.hasRole(DEFAULT_ADMIN_ROLE,msg.sender)||kotketGatewayOracle.hasRole(SC_GATEWAY_ORACLE_ROLE,msg.sender),"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L81)
+isSenderOwner
 require(msg.sender==address(this),"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L314)
+isSenderOwner
 require(tokenContract.ownerOf(tokenId)==msg.sender,"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L315)
+Ignore: enforce specification
 require(tokenContract.getApproved(tokenId)==address(this),"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L317)
+filtered
 require(purchasePrice>0||startingBidPrice>0,"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L318)
+filtered
 require(startingBidPrice==0||biddingTime>60,"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L355)
+Ignore: protocol-specific
 require(id<itemsOnMarket.length,"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L357)
+Ignore: enforce specification
 require(item.state==ON_MARKET,"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L358)
+OracleRange
 require(msg.value>=item.purchasePrice,"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L359)
+filtered
 require(item.purchasePrice>0,"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L360)
+filtered
 require(msg.sender!=item.seller,"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L389)
+filtered
 require(block.timestamp<item.auctionEndTime||item.highestBidder==address(0),"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L392)
+OracleDeviation
 require(msg.value>=item.bidPrice*nextBidPricePercentage/100,"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L394)
+OracleRange
 require(msg.value>=item.bidPrice,"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L439)
+filtered
 require(item.bidPrice>0,"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L440)
+filtered
 require(item.highestBidder!=address(0),"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L441)
+lastUpdate
 require(block.timestamp>item.auctionEndTime,"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L469)
+isSenderOwner
 require(msg.sender==item.seller,"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L470)
+lastUpdate
 require(block.timestamp>=item.listingCreationTime+delistCooldown,"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L471)
+filtered
 require(item.highestBidder==address(0),"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L472)
+filtered
 require(reducedBidPrice>0||reducedPrice>0,"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L510)
+lastUpdate
 require(block.timestamp>=item.listingCreationTime+600,"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L537)
+Ignore: enforce specification
 require(result,"")
 [Code File](contracts/mainnet/74/74a165e5c6548a0acdaf41cb14b87f8873767724_DreamMarketplace.sol#L548)
+filtered
 require(0<bidHistoryLength,"")
 [Code File](contracts/mainnet/4c/4c384b89d830acbe01b86f681ebd5799768049d6_NFTMarketplace.sol#L85)
+Ignore: enforce specification
 require(recoverSigner(message,signature)==admin,"")
 [Code File](contracts/mainnet/4c/4c384b89d830acbe01b86f681ebd5799768049d6_NFTMarketplace.sol#L90)
+Ignore: enforce specification
 require(price==msg.value,"")
 [Code File](contracts/mainnet/4c/4c384b89d830acbe01b86f681ebd5799768049d6_NFTMarketplace.sol#L98)
+filtered
 require(assetOwner!=address(0),"")
 [Code File](contracts/mainnet/4c/4c384b89d830acbe01b86f681ebd5799768049d6_NFTMarketplace.sol#L99)
+Ignore: enforce specification
 require(assetOwner!=buyer,"")
 [Code File](contracts/mainnet/4c/4c384b89d830acbe01b86f681ebd5799768049d6_NFTMarketplace.sol#L104)
+filtered
 require(orderId!=0,"")
 [Code File](contracts/mainnet/4c/4c384b89d830acbe01b86f681ebd5799768049d6_NFTMarketplace.sol#L247)
+Ignore: enforce specification
 require(sender==assetOwner,"")
 [Code File](contracts/mainnet/4c/4c384b89d830acbe01b86f681ebd5799768049d6_NFTMarketplace.sol#L253)
+filtered
 require(priceAsset>0,"")
 [Code File](contracts/mainnet/4c/4c384b89d830acbe01b86f681ebd5799768049d6_NFTMarketplace.sol#L289)
+filtered
 require(order.id!=0,"")
 [Code File](contracts/mainnet/4c/4c384b89d830acbe01b86f681ebd5799768049d6_NFTMarketplace.sol#L481)
+Ignore: safe math
 require(c>=a,"")
 [Code File](contracts/mainnet/4c/4c384b89d830acbe01b86f681ebd5799768049d6_NFTMarketplace.sol#L533)
+Ignore: safe math
 require(c/a==b,"")
 [Code File](contracts/mainnet/4c/4c384b89d830acbe01b86f681ebd5799768049d6_NFTMarketplace.sol#L600)
+filtered
 require(b!=0,errorMessage)
 [Code File](contracts/mainnet/4c/4c384b89d830acbe01b86f681ebd5799768049d6_NFTMarketplace.sol#L2487)
+Ignore: protocol-specific
 require(sig.length==65)
 [Code File](contracts/mainnet/66/66cBDbEbD5939ea74781Fe7Fe24a5EB3d346AD6C_EKotketNFTPlatformRenting.sol#L43)
+filtered
 require(_gene<=uint8(KOTKET_GENES.KING),"")
 [Code File](contracts/mainnet/66/66cBDbEbD5939ea74781Fe7Fe24a5EB3d346AD6C_EKotketNFTPlatformRenting.sol#L44)
+filtered
 require(_commission<=1000,"")
 [Code File](contracts/mainnet/66/66cBDbEbD5939ea74781Fe7Fe24a5EB3d346AD6C_EKotketNFTPlatformRenting.sol#L52)
+filtered
 require(depositItemInfoMap[_tokenId].owner!=address(0),"")
 [Code File](contracts/mainnet/66/66cBDbEbD5939ea74781Fe7Fe24a5EB3d346AD6C_EKotketNFTPlatformRenting.sol#L65)
+Ignore: protocol-specific
 require(kotketNFT.tokenExisted(_tokenId),"")
 [Code File](contracts/mainnet/66/66cBDbEbD5939ea74781Fe7Fe24a5EB3d346AD6C_EKotketNFTPlatformRenting.sol#L66)
+Ignore: enforce specification
 require(kotketNFT.ownerOf(_tokenId)==_msgSender(),"")
 [Code File](contracts/mainnet/66/66cBDbEbD5939ea74781Fe7Fe24a5EB3d346AD6C_EKotketNFTPlatformRenting.sol#L67)
+Ignore: enforce specification
 require(kotketNFT.getApproved(_tokenId)==address(this),"")
 [Code File](contracts/mainnet/66/66cBDbEbD5939ea74781Fe7Fe24a5EB3d346AD6C_EKotketNFTPlatformRenting.sol#L80)
+Ignore: enforce specification
 require(depositItemInfoMap[_tokenId].owner==_msgSender(),"")
 [Code File](contracts/mainnet/66/66cBDbEbD5939ea74781Fe7Fe24a5EB3d346AD6C_EKotketNFTPlatformRenting.sol#L83)
+Ignore: enforce specification
 require(kotketNFT.isApprovedForAll(governance.kotketWallet(),address(this)),"")
 [Code File](contracts/mainnet/66/66cBDbEbD5939ea74781Fe7Fe24a5EB3d346AD6C_EKotketNFTPlatformRenting.sol#L120)
+filtered
 require(benefit>0,"")
 [Code File](contracts/mainnet/66/66cBDbEbD5939ea74781Fe7Fe24a5EB3d346AD6C_EKotketNFTPlatformRenting.sol#L123)
+DataFlow
 require(kotketToken.balanceOf(governance.kotketWallet())>=benefit,"")
 [Code File](contracts/mainnet/66/66cBDbEbD5939ea74781Fe7Fe24a5EB3d346AD6C_EKotketNFTPlatformRenting.sol#L124)
+filtered
 require(kotketToken.allowance(governance.kotketWallet(),address(this))>=benefit,"")
 [Code File](contracts/mainnet/ea/EA1Ab2B141cd28A86531Ae256EA95580cC5A469e_NFTMarketplaceMain.sol#L84)
+lastUpdate
 require(block.timestamp>startTime,"")
 [Code File](contracts/mainnet/ea/EA1Ab2B141cd28A86531Ae256EA95580cC5A469e_NFTMarketplaceMain.sol#L85)
+lastUpdate
 require(block.timestamp<endTime,"")
 [Code File](contracts/mainnet/ea/EA1Ab2B141cd28A86531Ae256EA95580cC5A469e_NFTMarketplaceMain.sol#L91)
+filtered
 require(allowance>=price,"")
 [Code File](contracts/mainnet/ea/EA1Ab2B141cd28A86531Ae256EA95580cC5A469e_NFTMarketplaceMain.sol#L141)
+isSenderOwner
 require(msg.sender==address(endpoint))
 [Code File](contracts/mainnet/ea/EA1Ab2B141cd28A86531Ae256EA95580cC5A469e_NFTMarketplaceMain.sol#L188)
+filtered
 require(remaining>0,"")
 [Code File](contracts/mainnet/ea/EA1Ab2B141cd28A86531Ae256EA95580cC5A469e_NFTMarketplaceMain.sol#L1172)
+filtered
 require(owner!=address(0),"")
 [Code File](contracts/mainnet/ea/EA1Ab2B141cd28A86531Ae256EA95580cC5A469e_NFTMarketplaceMain.sol#L1203)
+Ignore: protocol-specific
 require(_exists(tokenId),"")
 [Code File](contracts/mainnet/ea/EA1Ab2B141cd28A86531Ae256EA95580cC5A469e_NFTMarketplaceMain.sol#L1223)
+Ignore: enforce specification
 require(to!=owner,"")
 [Code File](contracts/mainnet/ea/EA1Ab2B141cd28A86531Ae256EA95580cC5A469e_NFTMarketplaceMain.sol#L1265)
+Ignore: protocol-specific
 require(_isApprovedOrOwner(_msgSender(),tokenId),"")
 [Code File](contracts/mainnet/ea/EA1Ab2B141cd28A86531Ae256EA95580cC5A469e_NFTMarketplaceMain.sol#L1319)
+Ignore: protocol-specific
 require(_checkOnERC721Received(from,to,tokenId,_data),"")
 [Code File](contracts/mainnet/ea/EA1Ab2B141cd28A86531Ae256EA95580cC5A469e_NFTMarketplaceMain.sol#L1390)
+filtered
 require(to!=address(0),"")
 [Code File](contracts/mainnet/ea/EA1Ab2B141cd28A86531Ae256EA95580cC5A469e_NFTMarketplaceMain.sol#L1391)
+Ignore: protocol-specific
 require(!_exists(tokenId),"")
 [Code File](contracts/mainnet/ea/EA1Ab2B141cd28A86531Ae256EA95580cC5A469e_NFTMarketplaceMain.sol#L1441)
+Ignore: enforce specification
 require(ERC721.ownerOf(tokenId)==from,"")
 [Code File](contracts/mainnet/ea/EA1Ab2B141cd28A86531Ae256EA95580cC5A469e_NFTMarketplaceMain.sol#L1476)
+Ignore: enforce specification
 require(owner!=operator,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L187)
+filtered
 require(listedNFT.seller==address(0)&&listedNFT.price==0,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L193)
+Ignore: enforce specification
 require(auctionNft.addr==nft.addr&&auctionNft.tokenId==nft.tokenId,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L199)
+filtered
 require(auction.nft.addr==address(0)||auction.success,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L205)
+Ignore: enforce specification
 require(offer.offerer==params.offerer&&offer.offerPrice==params.price,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L206)
+Ignore: enforce specification
 require(!offer.accepted,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L215)
+lastUpdate
 require(block.timestamp<=params.startTime&&params.endTime>params.startTime,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L216)
+OracleRange
 require(params.price>MINIMUM_BUYING_FEE,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L224)
+isSenderOwner
 require(listedNFT.seller==msg.sender,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L227)
+isSenderOwner
 require(nftContract.ownerOf(params.nft.tokenId)==msg.sender,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L229)
+DataFlow
 require(loveToken.balanceOf(msg.sender)>=platformListingFee,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L285)
+OracleRange
 require(price>=listedNft.price,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L337)
+isSenderOwner
 require(params.offerer==msg.sender,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L366)
+isSenderOwner
 require(msg.sender==list.seller,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L370)
+isSenderOwner
 require(IERC721(params.nft.addr).ownerOf(params.nft.tokenId)==msg.sender,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L405)
+isSenderOwner
 require(nft.ownerOf(params.nft.tokenId)==msg.sender,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L445)
+isSenderOwner
 require(auction.creator==msg.sender,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L446)
+Ignore: enforce specification
 require(!auction.success,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L447)
+filtered
 require(auction.lastBidder==address(0),"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L463)
+lastUpdate
 require(block.timestamp>=auction.startTime,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L464)
+lastUpdate
 require(block.timestamp<=auction.endTime,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L465)
+OracleRange
 require(bidPrice>=auction.highestBid+auction.minBidStep,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L532)
+filtered
 require(feeReceiver!=address(0),"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L533)
+TokenOutUpperBound
 require(getAvailableBalance()>=amount,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L534)
+Ignore: protocol-specific
 require(loveToken.transfer(feeReceiver,amount),"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L551)
+filtered
 require(newFeeReceiver!=address(0),"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L583)
+lastUpdate
 require(block.timestamp>auction.endTime,"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L604)
+Ignore: protocol-specific
 require(loveToken.transfer(creator,amount),"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L887)
+DataFlow
 require(feeNumerator<=_feeDenominator(),"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L888)
+filtered
 require(receiver!=address(0),"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L1249)
+isSenderOwner
 require(users[msg.sender][role]||msg.sender==owner(),"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L1254)
+Ignore: enforce specification
 require(!users[account][role],"")
 [Code File](contracts/mainnet/61/611F183e3Bf5bAb879F9182d290eA3d6b1d36cB5_LoveNFTMarketplace.sol#L1261)
+Ignore: enforce specification
 require(users[account][role],"")
 [Code File](contracts/mainnet/dc/dc4838bb0496b351875d7e418f91f1a49d060b5f_NFTMarket.sol#L454)
+isSenderOwner
 require(treasury==msg.sender,"")
 [Code File](contracts/mainnet/60/608CBd7fFa4dab279044e55994E60dc6b4b4DfE1_EKotketToken.sol#L787)
+filtered
 require(currentAllowance>=amount,"")
 [Code File](contracts/mainnet/60/608CBd7fFa4dab279044e55994E60dc6b4b4DfE1_EKotketToken.sol#L828)
+filtered
 require(currentAllowance>=subtractedValue,"")
 [Code File](contracts/mainnet/60/608CBd7fFa4dab279044e55994E60dc6b4b4DfE1_EKotketToken.sol#L855)
+filtered
 require(sender!=address(0),"")
 [Code File](contracts/mainnet/60/608CBd7fFa4dab279044e55994E60dc6b4b4DfE1_EKotketToken.sol#L856)
+filtered
 require(recipient!=address(0),"")
 [Code File](contracts/mainnet/60/608CBd7fFa4dab279044e55994E60dc6b4b4DfE1_EKotketToken.sol#L861)
+TokenOutUpperBound
 require(senderBalance>=amount,"")
 [Code File](contracts/mainnet/60/608CBd7fFa4dab279044e55994E60dc6b4b4DfE1_EKotketToken.sol#L882)
+filtered
 require(account!=address(0),"")
 [Code File](contracts/mainnet/60/608CBd7fFa4dab279044e55994E60dc6b4b4DfE1_EKotketToken.sol#L910)
+TokenOutUpperBound
 require(accountBalance>=amount,"")
 [Code File](contracts/mainnet/60/608CBd7fFa4dab279044e55994E60dc6b4b4DfE1_EKotketToken.sol#L940)
+filtered
 require(spender!=address(0),"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L136)
+filtered
 require(!_initializing&&_initialized<version,"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L149)
+Ignore: enforce specification
 require(_initializing,"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L160)
+Ignore: enforce specification
 require(!_initializing,"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L479)
+filtered
 require(from!=address(0),"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L485)
+TokenOutUpperBound
 require(fromBalance>=amount,"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L1536)
+filtered
 require(newImplementation==address(0)||AddressUpgradeable.isContract(newImplementation),"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L1604)
+filtered
 require(newAdmin!=address(0),"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L1630)
+filtered
 require(success)
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L1659)
+filtered
 require(msg.sender!=_admin(),"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L1762)
+isSenderOwner
 require(msg.sender==_admin(),"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L1944)
+isSenderOwner
 require(msg.sender==governor||msg.sender==_admin())
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L1972)
+filtered
 require(newGovernor!=address(0))
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L2077)
+filtered
 require(_entered==0,"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L2129)
+Ignore: enforce specification
 require(!make_.isBid,"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L2141)
+filtered
 require(makes[makeID].maker!=address(0),"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L2142)
+isSenderOwner
 require(makes[makeID].maker==msg.sender,"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L2143)
+Ignore: enforce specification
 require(makes[makeID].status==Status.None,"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L2178)
+isSenderOwner
 require(takes[takeID].taker==msg.sender,"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L2180)
+filtered
 require(takes[takeID].status<=Status.Paid,"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L2188)
+isSenderOwner
 require(msg.sender==takes[takeID].taker,"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L2189)
+Ignore: enforce specification
 require(takes[takeID].status==Status.Take,"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L2198)
+filtered
 require(takes[takeID].taker!=address(0),"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L2201)
+isSenderOwner
 require(msg.sender==makes[makeID].maker,"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L2214)
+isSenderOwner
 require(msg.sender==makes[makeID].maker||msg.sender==takes[takeID].taker,"")
 [Code File](contracts/mainnet/60/60c19bc4f6b9e31e13cc648a3f84b57ad811c832_NftMarketplace.sol#L2228)
+isSenderManager
 require(isArbiter[msg.sender],"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L138)
+Ignore: protocol-specific
 require(launchpadId<launchpads.length,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L142)
+onlyEOA
 require(tx.origin==msg.sender,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L149)
+filtered
 require(_yfiagNftMarketplace!=address(0),"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L150)
+Ignore: protocol-specific
 require(_yfiagNftMarketplace.isContract(),"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L226)
+lastUpdate
 require(blockNumber<=block.number,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L449)
+TokenOutUpperBound
 require(amount>=launchpad.minTotalStake,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L550)
+Ignore: enforce specification
 require(!addElseSub,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L625)
+filtered
 require(_weightAccrualRate!=0,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L626)
+filtered
 require(_endTime>_startTime,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L627)
+lastUpdate
 require(_endTime>block.timestamp,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L628)
+filtered
 require(address(stakeToken)!=address(0),"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L629)
+Ignore: protocol-specific
 require(stakeToken.isContract(),"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L630)
+Ignore: protocol-specific
 require(IYFIAGNftMarketplace(yfiagNftMarketplace).isOwnerOfRoot(_rootId,msg.sender),"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L677)
+filtered
 require(amount>0,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L682)
+lastUpdate
 require(launchpad.startTime<block.timestamp,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L685)
+lastUpdate
 require(block.timestamp<launchpad.endTime,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L691)
+Ignore: enforce specification
 require(!isDisabled,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L714)
+Ignore: enforce specification
 require(launchpadDisabled[launchpadId],"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L721)
+Ignore: protocol-specific
 require(!winners[launchpadId][_msgSender()],"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L730)
+filtered
 require(userCheckpointCount>0,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L739)
+filtered
 require(checkpoint.staked>0,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L757)
+Ignore: enforce specification
 require(!launchpadDisabled[launchpadId],"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L758)
+filtered
 require(_winners.length>0,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L759)
+Ignore: protocol-specific
 require(_winners.length<=IYFIAGNftMarketplace(yfiagNftMarketplace).getMaxFragment(),"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L761)
+Ignore: enforce specification
 require(_winners[i]!=msg.sender,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L762)
+Ignore: enforce specification
 require(isStakers[launchpadId][_winners[i]],"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L763)
+filtered
 require(_winners[i]!=address(0),"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L786)
+Ignore: protocol-specific
 require(winners[launchpadId][_msgSender()],"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L789)
+Ignore: protocol-specific
 require(!isClaimed[launchpadId][_msgSender()],"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L828)
+filtered
 require(launchpadIds.length>0,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L831)
+Ignore: protocol-specific
 require(launchpadIds[i]<launchpads.length,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L832)
+filtered
 require(balanceOfLaunchpad[launchpadIds[i]]>0,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L833)
+Ignore: protocol-specific
 require(!hasWithdrawFund[uint24(launchpadIds[i])],"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L834)
+Ignore: protocol-specific
 require(hasSetLaunchpadWinner[uint24(launchpadIds[i])],"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L835)
+filtered
 require(amountOfWinners[uint24(launchpadIds[i])]>0,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L843)
+TokenOutUpperBound
 require(_balance>=amountAdminWithdraw,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L857)
+filtered
 require(_newEndTime>_newStartTime,"")
 [Code File](contracts/mainnet/4f/4FC740E85B8CE94ac5793540A3476e4A164eE691_YFIAGLaunchPad.sol#L858)
+lastUpdate
 require(_newEndTime>block.timestamp,"")
 [Code File](contracts/mainnet/3e/3eb0c8a43530f0ab82977657055212d045429ed4_ElumntNFTMarketplace.sol#L76)
+Ignore: protocol-specific
 require(sig.length==65,"")
 [Code File](contracts/mainnet/3e/3eb0c8a43530f0ab82977657055212d045429ed4_ElumntNFTMarketplace.sol#L495)
+TokenOutUpperBound
 require(balance>=amount,"")
 [Code File](contracts/mainnet/3e/3eb0c8a43530f0ab82977657055212d045429ed4_ElumntNFTMarketplace.sol#L507)
+isSenderManager
 require(!seenNonces[msg.sender][_transferData.nonce],"")
 [Code File](contracts/mainnet/3e/3eb0c8a43530f0ab82977657055212d045429ed4_ElumntNFTMarketplace.sol#L509)
+Ignore: protocol-specific
 require(verify(msg.sender,msg.sender,_transferData.amount,_transferData.encodeKey,_transferData.nonce,_transferData.signature),"")
 [Code File](contracts/mainnet/3e/3eb0c8a43530f0ab82977657055212d045429ed4_ElumntNFTMarketplace.sol#L567)
+isSenderManager
 require(!seenNonces[msg.sender][_buyData.nonce],"")
 [Code File](contracts/mainnet/3e/3eb0c8a43530f0ab82977657055212d045429ed4_ElumntNFTMarketplace.sol#L569)
+Ignore: protocol-specific
 require(verify(msg.sender,msg.sender,_buyData.amount,_buyData.encodeKey,_buyData.nonce,_buyData.signature),"")
 [Code File](contracts/mainnet/3e/3eb0c8a43530f0ab82977657055212d045429ed4_ElumntNFTMarketplace.sol#L595)
+isSenderManager
 require(!seenNonces[msg.sender][_createData.nonce],"")
 [Code File](contracts/mainnet/3e/3eb0c8a43530f0ab82977657055212d045429ed4_ElumntNFTMarketplace.sol#L597)
+Ignore: protocol-specific
 require(verify(msg.sender,msg.sender,_createData.amount,_createData.encodeKey,_createData.nonce,_createData.signature),"")
 [Code File](contracts/mainnet/3e/3eb0c8a43530f0ab82977657055212d045429ed4_ElumntNFTMarketplace.sol#L717)
+filtered
 require(balance>=0,"")
 [Code File](contracts/mainnet/9a/9a4aeB1e97f25A29afE8C954bFb08f098E510889_NFTMarketplace.sol#L55)
+isSenderOwner
 require(msg.sender==owner)
 [Code File](contracts/mainnet/9a/9a4aeB1e97f25A29afE8C954bFb08f098E510889_NFTMarketplace.sol#L61)
+isSenderOwner
 require(mod==msg.sender,"")
 [Code File](contracts/mainnet/9a/9a4aeB1e97f25A29afE8C954bFb08f098E510889_NFTMarketplace.sol#L152)
+filtered
 require(price>0,"")
 [Code File](contracts/mainnet/9a/9a4aeB1e97f25A29afE8C954bFb08f098E510889_NFTMarketplace.sol#L153)
+filtered
 require(msg.value==listingFee,"")
 [Code File](contracts/mainnet/9a/9a4aeB1e97f25A29afE8C954bFb08f098E510889_NFTMarketplace.sol#L398)
+filtered
 require(value>0,"")
 [Code File](contracts/mainnet/df/dfce2ce8742929275c7dad33be711f4cc0efad58_IndigenaNFTMarketplace.sol#L332)
+filtered
 require(_initialized<version,"")
 [Code File](contracts/mainnet/df/dfce2ce8742929275c7dad33be711f4cc0efad58_IndigenaNFTMarketplace.sol#L716)
+Ignore: protocol-specific
 require(accounts.length==ids.length,"")
 [Code File](contracts/mainnet/df/dfce2ce8742929275c7dad33be711f4cc0efad58_IndigenaNFTMarketplace.sol#L833)
+Ignore: protocol-specific
 require(ids.length==amounts.length,"")
 [Code File](contracts/mainnet/df/dfce2ce8742929275c7dad33be711f4cc0efad58_IndigenaNFTMarketplace.sol#L1301)
+TotalSupplyUpperBound
 require(supply>=amount,"")
 [Code File](contracts/mainnet/df/dfce2ce8742929275c7dad33be711f4cc0efad58_IndigenaNFTMarketplace.sol#L1368)
+isSenderOwner
 require(msg.sender==owner,"")
 [Code File](contracts/mainnet/df/dfce2ce8742929275c7dad33be711f4cc0efad58_IndigenaNFTMarketplace.sol#L1381)
+isSenderOwner
 require(msg.sender==Operator,"")
 [Code File](contracts/mainnet/df/dfce2ce8742929275c7dad33be711f4cc0efad58_IndigenaNFTMarketplace.sol#L1382)
+Ignore: protocol-specific
 require(!isDuplicate(__uri),"")
 [Code File](contracts/mainnet/e6/e6d721ae851e90c2870df2d4526faae5c5cd2405_NFTMarketplace.sol#L1198)
+isSenderOwner
 require(owner==msg.sender,"")
 [Code File](contracts/mainnet/e6/e6d721ae851e90c2870df2d4526faae5c5cd2405_NFTMarketplace.sol#L1223)
+filtered
 require(msg.value==listingPrice,"")
 [Code File](contracts/mainnet/e6/e6d721ae851e90c2870df2d4526faae5c5cd2405_NFTMarketplace.sol#L1245)
+isSenderOwner
 require(idToMarketItem[tokenId].owner==msg.sender,"")
 [Code File](contracts/mainnet/e5/e55e4479d9184572bce3D74064d112c3eC50F40e_EKotketNFTFactory.sol#L66)
+filtered
 require(referrer!=address(0),"")
 [Code File](contracts/mainnet/e5/e55e4479d9184572bce3D74064d112c3eC50F40e_EKotketNFTFactory.sol#L72)
+Ignore: enforce specification
 require(activeRefMap[_referrer],"")
 [Code File](contracts/mainnet/e5/e55e4479d9184572bce3D74064d112c3eC50F40e_EKotketNFTFactory.sol#L73)
+Ignore: enforce specification
 require(_referrer!=_msgSender(),"")
 [Code File](contracts/mainnet/e5/e55e4479d9184572bce3D74064d112c3eC50F40e_EKotketNFTFactory.sol#L75)
+filtered
 require(parentRefMap[_msgSender()]==address(0)||parentRefMap[_msgSender()]==_referrer,"")
 [Code File](contracts/mainnet/e5/e55e4479d9184572bce3D74064d112c3eC50F40e_EKotketNFTFactory.sol#L82)
+filtered
 require(parentRefMap[_msgSender()]!=address(0),"")
 [Code File](contracts/mainnet/e5/e55e4479d9184572bce3D74064d112c3eC50F40e_EKotketNFTFactory.sol#L112)
+filtered
 require(allowedWeiPurchase,"")
 [Code File](contracts/mainnet/e5/e55e4479d9184572bce3D74064d112c3eC50F40e_EKotketNFTFactory.sol#L117)
+filtered
 require(bredAmountAllowanceMap[gene]>0,"")
 [Code File](contracts/mainnet/e5/e55e4479d9184572bce3D74064d112c3eC50F40e_EKotketNFTFactory.sol#L120)
+OracleRange
 require(weiAmount>=kotketPriceMap[gene].eWei,"")
 [Code File](contracts/mainnet/e5/e55e4479d9184572bce3D74064d112c3eC50F40e_EKotketNFTFactory.sol#L140)
+filtered
 require(allowedKotketTokenPurchase,"")
 [Code File](contracts/mainnet/e5/e55e4479d9184572bce3D74064d112c3eC50F40e_EKotketNFTFactory.sol#L150)
+OracleRange
 require(kotketToken.balanceOf(_msgSender())>=price,"")
 [Code File](contracts/mainnet/e5/e55e4479d9184572bce3D74064d112c3eC50F40e_EKotketNFTFactory.sol#L153)
+filtered
 require(tokenAllowance>=price,"")
 [Code File](contracts/mainnet/19/193d0F85AC3016f3d6438947D32a291335258891_NftMarketplace.sol#L50)
+CallValueUpperBound
 require(msg.value>=fees.offerFee)
 [Code File](contracts/mainnet/19/193d0F85AC3016f3d6438947D32a291335258891_NftMarketplace.sol#L62)
+isSenderOwner
 require(IERC721(asset.collection).ownerOf(asset.ids[j])==msg.sender)
 [Code File](contracts/mainnet/19/193d0F85AC3016f3d6438947D32a291335258891_NftMarketplace.sol#L64)
+filtered
 require(swap.assets[asset.collection].length==0)
 [Code File](contracts/mainnet/19/193d0F85AC3016f3d6438947D32a291335258891_NftMarketplace.sol#L73)
+filtered
 require(swap.quantity[wantedAsset.collection]==0)
 [Code File](contracts/mainnet/19/193d0F85AC3016f3d6438947D32a291335258891_NftMarketplace.sol#L82)
+Ignore: enforce specification
 require(receiver!=sender)
 [Code File](contracts/mainnet/19/193d0F85AC3016f3d6438947D32a291335258891_NftMarketplace.sol#L83)
+filtered
 require(assets.length>0&&assets.length<=MAX_ASSET_SIZE)
 [Code File](contracts/mainnet/19/193d0F85AC3016f3d6438947D32a291335258891_NftMarketplace.sol#L84)
+filtered
 require(wantedAssets.length>0&&wantedAssets.length<=MAX_ASSET_SIZE)
 [Code File](contracts/mainnet/19/193d0F85AC3016f3d6438947D32a291335258891_NftMarketplace.sol#L88)
+Ignore: protocol-specific
 require(!ArrayUtils.hasDuplicate(asset.ids))
 [Code File](contracts/mainnet/19/193d0F85AC3016f3d6438947D32a291335258891_NftMarketplace.sol#L89)
+filtered
 require(asset.ids.length>0&&asset.ids.length<=MAX_QUANTITY)
 [Code File](contracts/mainnet/19/193d0F85AC3016f3d6438947D32a291335258891_NftMarketplace.sol#L90)
+filtered
 require(isAllowedCollection(asset.collection))
 [Code File](contracts/mainnet/19/193d0F85AC3016f3d6438947D32a291335258891_NftMarketplace.sol#L94)
+filtered
 require(asset.quantity>0&&asset.quantity<=MAX_QUANTITY&&asset.quantity>=asset.ids.length)
 [Code File](contracts/mainnet/19/193d0F85AC3016f3d6438947D32a291335258891_NftMarketplace.sol#L107)
+Ignore: enforce specification
 require(swap.status==Status.CREATED)
 [Code File](contracts/mainnet/19/193d0F85AC3016f3d6438947D32a291335258891_NftMarketplace.sol#L108)
+Ignore: enforce specification
 require(swap.maker!=msg.sender)
 [Code File](contracts/mainnet/19/193d0F85AC3016f3d6438947D32a291335258891_NftMarketplace.sol#L124)
+CallValueUpperBound
 require(msg.value>=nftCounter*fees.swapFeePerNft+fees.swapFee)
 [Code File](contracts/mainnet/19/193d0F85AC3016f3d6438947D32a291335258891_NftMarketplace.sol#L130)
+filtered
 require(quantity==asset.ids.length&&quantity>0)
 [Code File](contracts/mainnet/19/193d0F85AC3016f3d6438947D32a291335258891_NftMarketplace.sol#L134)
+filtered
 requiredIdsCount++
 [Code File](contracts/mainnet/19/193d0F85AC3016f3d6438947D32a291335258891_NftMarketplace.sol#L138)
+filtered
 require(requiredIdsCount==requiredIds.length)
 [Code File](contracts/mainnet/19/193d0F85AC3016f3d6438947D32a291335258891_NftMarketplace.sol#L146)
+Ignore: enforce specification
 require(receiverIsValid)
 [Code File](contracts/mainnet/19/193d0F85AC3016f3d6438947D32a291335258891_NftMarketplace.sol#L152)
+isSenderOwner
 require(swap.maker==msg.sender)
 [Code File](contracts/mainnet/19/193d0F85AC3016f3d6438947D32a291335258891_NftMarketplace.sol#L191)
+Ignore: enforce specification
 require(os)
 [Code File](contracts/mainnet/19/19537635595aac362D8FC6d14CCdF6b54D8cFC28_YFIAGNftPool.sol#L67)
+filtered
 require(subOwnerFee>0,"")
 [Code File](contracts/mainnet/19/19537635595aac362D8FC6d14CCdF6b54D8cFC28_YFIAGNftPool.sol#L68)
+DataFlow
 require(address(this).balance>=subOwnerFee,"")
 [Code File](contracts/mainnet/19/19537635595aac362D8FC6d14CCdF6b54D8cFC28_YFIAGNftPool.sol#L91)
+filtered
 require(marketPlaceAddress!=address(0),"")
 [Code File](contracts/mainnet/19/19537635595aac362D8FC6d14CCdF6b54D8cFC28_YFIAGNftPool.sol#L92)
+Ignore: protocol-specific
 require(marketPlaceAddress.isContract(),"")
 [Code File](contracts/mainnet/19/19537635595aac362D8FC6d14CCdF6b54D8cFC28_YFIAGNftPool.sol#L100)
+filtered
 require(newPool!=address(0),"")
 [Code File](contracts/mainnet/19/19537635595aac362D8FC6d14CCdF6b54D8cFC28_YFIAGNftPool.sol#L101)
+Ignore: protocol-specific
 require(newPool.isContract(),"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L776)
+filtered
 require(BERC20.allowance(msg.sender,address(this))>=_offer,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L809)
+isSenderOwner
 require(IERC721(_nft).ownerOf(_tokenId)==msg.sender,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L813)
+Ignore: enforce specification
 require(!offer.isAccepted,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L814)
+isSenderOwner
 require(msg.sender==offer.owner,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L829)
+filtered
 require(BERC20.allowance(_offerer,address(this))>=offerAmount,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L896)
+isSenderOwner
 require(nft.ownerOf(_tokenId)==msg.sender,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L923)
+filtered
 require(msg.sender!=listedNft.seller,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L942)
+filtered
 require(success0,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L962)
+Ignore: enforce specification
 require(!listedNft.sold,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L964)
+isSenderOwner
 require(listedNft.seller==msg.sender,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L994)
+isSenderOwner
 require(msg.sender==IERC721(_nft).ownerOf(_tokenId),"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L995)
+filtered
 require(_price>0,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L996)
+lastUpdate
 require(_duration>block.timestamp,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1017)
+OracleRange
 require(_amount>=auction.price,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1018)
+filtered
 require(BERC20.allowance(msg.sender,address(this))>=_amount,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1019)
+Ignore: enforce specification
 require(auction.isActive,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1020)
+lastUpdate
 require(auction.duration>block.timestamp,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1030)
+TokenOutUpperBound
 require(auction.bidAmounts[lastIndex]<_amount,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1050)
+filtered
 require(auction.maxBidUser==msg.sender||msg.sender==auction.seller,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1051)
+lastUpdate
 require(auction.duration<=block.timestamp,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1058)
+filtered
 require(BERC20.allowance(auction.maxBidUser,address(this))>=auction.maxBid,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1099)
+isSenderOwner
 require(auction.seller==msg.sender,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1121)
+TokenOutUpperBound
 require(IERC1155(_nft).balanceOf(msg.sender,tokenId)>=amount,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1122)
+Ignore: enforce specification
 require(IERC1155(_nft).isApprovedForAll(msg.sender,address(this)),"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1145)
+Ignore: enforce specification
 require(whitelisted==true,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1148)
+filtered
 require(msg.sender!=idToListing1155[listingId].seller,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1149)
+OracleRange
 require(msg.value>=idToListing1155[listingId].price*amount,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1150)
+TokenOutUpperBound
 require(IERC1155(idToListing1155[listingId].nft).balanceOf(idToListing1155[listingId].seller,idToListing1155[listingId].tokenId)>=amount,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1151)
+Ignore: enforce specification
 require(idToListing1155[listingId].completed==false,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1152)
+TokenOutUpperBound
 require(idToListing1155[listingId].tokensAvailable>=amount,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1204)
+isSenderOwner
 require(msg.sender==idToListing1155[_listingId].seller,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1205)
+Ignore: enforce specification
 require(idToListing1155[_listingId].completed==false,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1223)
+TokenOutUpperBound
 require(_amount<address(this).balance,"")
 [Code File](contracts/mainnet/2a/2a5375d4a764306abbfeb0264836310fb6b58049_BharatNFTMarketplace.sol#L1230)
+TokenOutUpperBound
 require(IERC20(_token).balanceOf(address(this))>_amount,"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L55)
+filtered
 require(_serviceCommissionByDay<=1000,"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L61)
+filtered
 require(_serviceCommissionByEndOfPeriod<=1000,"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L67)
+filtered
 require(rentalItemInfoMap[_tokenId].owner!=address(0),"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L68)
+filtered
 require(rentalItemInfoMap[_tokenId].renter!=address(0),"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L83)
+filtered
 require(_interestRate<=1000,"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L86)
+filtered
 require(_period>0,"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L90)
+filtered
 require(_profitReceivingMethod<=uint8(PROFIT_RECEIVING_METHOD.END_OF_PERIOD),"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L113)
+Ignore: enforce specification
 require(rentalItemInfoMap[_tokenId].owner==_msgSender(),"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L114)
+filtered
 require(rentalItemInfoMap[_tokenId].renter==address(0),"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L144)
+filtered
 require(timeStamp<rentalItemInfoMap[_tokenId].extensionFrom||timeStamp>rentalItemInfoMap[_tokenId].endAt,"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L156)
+filtered
 require(timeStamp>rentalItemInfoMap[_tokenId].endAt,"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L172)
+Ignore: enforce specification
 require(rentalItemInfoMap[_tokenId].renter==_msgSender(),"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L173)
+filtered
 require(rentalItemInfoMap[_tokenId].endAt>=timeStamp,"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L186)
+filtered
 require(_beneficiary!=address(0),"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L189)
+Ignore: enforce specification
 require(!rentalItemInfoMap[_tokenId].stopForRent,"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L210)
+Ignore: enforce specification
 require(rentalItemInfoMap[_tokenId].renter==_beneficiary,"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L212)
+filtered
 require(rentalItemInfoMap[_tokenId].extensionFrom<=timeStamp,"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L235)
+OracleRange
 require(kotketToken.balanceOf(_msgSender())>=priceInPeriod,"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L238)
+filtered
 require(tokenAllowance>=priceInPeriod,"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L276)
+filtered
 require(reward>0,"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L279)
+DataFlow
 require(kotketToken.balanceOf(address(this))>=reward,"")
 [Code File](contracts/mainnet/6e/6E2AD06A5B22c91daCedC9F6A9F33aC02Edcba70_EKotketNFTRentalMarket.sol#L323)
+TokenOutUpperBound
 require(kotketToken.balanceOf(address(this))>=amount,"")
 [Code File](contracts/mainnet/e0/E04b882684CECe7511b9cb1f88Ac07aCdfc0FAEB_NFTMarketplace.sol#L82)
+isSenderOwner
 require(msg.sender==tokenContract.ownerOf(tokenId),"")
 [Code File](contracts/mainnet/e0/E04b882684CECe7511b9cb1f88Ac07aCdfc0FAEB_NFTMarketplace.sol#L83)
+filtered
 require(minimumOffer>0,"")
 [Code File](contracts/mainnet/e0/E04b882684CECe7511b9cb1f88Ac07aCdfc0FAEB_NFTMarketplace.sol#L100)
+isSenderOwner
 require(msg.sender==tokenMarkets[tokenId].bidder,"")
 [Code File](contracts/mainnet/e0/E04b882684CECe7511b9cb1f88Ac07aCdfc0FAEB_NFTMarketplace.sol#L114)
+CallValueUpperBound
 require(msg.value>existingLockedBid,"")
 [Code File](contracts/mainnet/e0/E04b882684CECe7511b9cb1f88Ac07aCdfc0FAEB_NFTMarketplace.sol#L146)
+filtered
 require(msg.value>0,"")
 [Code File](contracts/mainnet/e0/E04b882684CECe7511b9cb1f88Ac07aCdfc0FAEB_NFTMarketplace.sol#L170)
+filtered
 require(newFeePortion<=1000,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L318)
+DataFlow
 require(denominator>prod1)
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L1408)
+Ignore: protocol-specific
 require(_checkOnERC721Received(from,to,tokenId,data),"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2056)
+filtered
 require(_nftContract!=address(0),"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2057)
+filtered
 require(_nftHolder!=address(0),"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2058)
+filtered
 require(_randomContract!=address(0),"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2096)
+filtered
 require(nftSoldData[voucher.signature]<numberOfNfts,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2097)
+OracleRange
 require(msg.value>=price,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2098)
+filtered
 require(campaigns[campaignId].creatorAddress!=address(0),"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2099)
+Ignore: enforce specification
 require(campaignId==voucherToCampaignID[voucher.signature],"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2100)
+Ignore: enforce specification
 require(!campaigns[campaignId].isEnded,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2121)
+lastUpdate
 require(_campaignDTO.drawTime>block.timestamp,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2165)
+Ignore: enforce specification
 require(!isOnAuction,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2166)
+lastUpdate
 require(bidEndTime>block.timestamp,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2172)
+Ignore: enforce specification
 require(numberOfNfts==1,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2196)
+Ignore: enforce specification
 require(currentlyOnAuction[itemId].nftID==itemId,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2197)
+lastUpdate
 require(currentlyOnAuction[itemId].biddingTime>block.timestamp,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2198)
+Ignore: enforce specification
 require(!currentlyOnAuction[itemId].sold,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2199)
+OracleRange
 require(msg.value>=price&&msg.value>bidderInfo[itemId].bidderAmount,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2215)
+Ignore: enforce specification
 require(currentlyOnAuction[itemId].isOnAuction,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2216)
+lastUpdate
 require(currentlyOnAuction[itemId].biddingTime<=block.timestamp,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2220)
+isSenderOwner
 require(bidderInfo[itemId].bidderAddress==msg.sender,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2244)
+Ignore: enforce specification
 require(isOnAuction,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2245)
+lastUpdate
 require(currentlyOnAuction[currentlyOnAuctionTokenID].biddingTime<block.timestamp,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2273)
+filtered
 require(campaigns[_campaignId].creatorAddress!=address(0),"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2274)
+Ignore: enforce specification
 require(!campaigns[_campaignId].isEnded,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2278)
+filtered
 require(campaigns[_campaignId].currentNoOfParticipants>0,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2304)
+filtered
 require(campaigns[_campaignId].campaignID!=0,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2306)
+lastUpdate
 require(_drawTime>block.timestamp,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2311)
+filtered
 require(tokenId!=0,"")
 [Code File](contracts/mainnet/4a/4a84aa90441533da3758f63ec07133b2e5754b8a_LooxooryNFTMarketplace.sol#L2315)
+lastUpdate
 require(_bidEndTime>block.timestamp,"")
 [Code File](contracts/mainnet/d6/d63b49eb1AfD14C0eD636AC58805a39A29b3B1C4_NFTMarketplace.sol#L442)
+filtered
 require(gotMaxTokenSupply>0,"")
 [Code File](contracts/mainnet/d6/d63b49eb1AfD14C0eD636AC58805a39A29b3B1C4_NFTMarketplace.sol#L457)
+isSenderOwner
 require(msg.sender==marketOwner,"")
 [Code File](contracts/mainnet/d6/d63b49eb1AfD14C0eD636AC58805a39A29b3B1C4_NFTMarketplace.sol#L458)
+TotalSupplyUpperBound
 require(gotNewMaxTokenSupply>_maxTokenSupply,"")
 [Code File](contracts/mainnet/d6/d63b49eb1AfD14C0eD636AC58805a39A29b3B1C4_NFTMarketplace.sol#L463)
+filtered
 require(tempTokenURI.length>0,"")
 [Code File](contracts/mainnet/d6/d63b49eb1AfD14C0eD636AC58805a39A29b3B1C4_NFTMarketplace.sol#L467)
+Ignore: enforce specification
 require(_tokenIds.current()!=_maxTokenSupply,"")
 [Code File](contracts/mainnet/d6/d63b49eb1AfD14C0eD636AC58805a39A29b3B1C4_NFTMarketplace.sol#L477)
+filtered
 require((msg.sender==MarketItemDatabase[tokenId].nftCreator&&MarketItemDatabase[tokenId].nftOwner==address(0))||msg.sender==MarketItemDatabase[tokenId].nftOwner,"")
 [Code File](contracts/mainnet/d6/d63b49eb1AfD14C0eD636AC58805a39A29b3B1C4_NFTMarketplace.sol#L484)
+filtered
 require((msg.sender==MarketItemDatabase[tokenId].nftCreator&&MarketItemDatabase[tokenId].nftOwner==address(0))||msg.sender==MarketItemDatabase[tokenId].nftOwner||msg.sender==marketOwner,"")
 [Code File](contracts/mainnet/d6/d63b49eb1AfD14C0eD636AC58805a39A29b3B1C4_NFTMarketplace.sol#L485)
+Ignore: enforce specification
 require(MarketItemDatabase[tokenId].forSale==true,"")
 [Code File](contracts/mainnet/d6/d63b49eb1AfD14C0eD636AC58805a39A29b3B1C4_NFTMarketplace.sol#L496)
+filtered
 require(msg.sender!=marketOwner,"")
 [Code File](contracts/mainnet/d6/d63b49eb1AfD14C0eD636AC58805a39A29b3B1C4_NFTMarketplace.sol#L498)
+filtered
 require(msg.value==marketItemPrice,"")
 [Code File](contracts/mainnet/d6/d63b49eb1AfD14C0eD636AC58805a39A29b3B1C4_NFTMarketplace.sol#L512)
+Ignore: enforce specification
 require(MarketItemDatabase[tokenId].forSale==false,"")
 [Code File](contracts/mainnet/d6/d63b49eb1AfD14C0eD636AC58805a39A29b3B1C4_NFTMarketplace.sol#L513)
+filtered
 require(msg.value==gotTransferFee,"")
 [Code File](contracts/mainnet/d6/d63b49eb1AfD14C0eD636AC58805a39A29b3B1C4_NFTMarketplace.sol#L527)
+filtered
 require(msg.value==withdrawAmount,"")
 [Code File](contracts/mainnet/d6/d63b49eb1AfD14C0eD636AC58805a39A29b3B1C4_NFTMarketplace.sol#L528)
+TokenOutUpperBound
 require(mpWallets[sendTo]>=withdrawAmount,"")
 [Code File](contracts/mainnet/d6/d63b49eb1AfD14C0eD636AC58805a39A29b3B1C4_NFTMarketplace.sol#L534)
+filtered
 require(mpWallets[userWallet]>0,"")
 [Code File](contracts/mainnet/d6/d63b49eb1AfD14C0eD636AC58805a39A29b3B1C4_NFTMarketplace.sol#L535)
+filtered
 require((userWallet==MarketItemDatabase[tokenID].nftCreator&&MarketItemDatabase[tokenID].nftOwner!=address(0))||userWallet!=MarketItemDatabase[tokenID].nftOwner,"")
 [Code File](contracts/mainnet/d6/d63b49eb1AfD14C0eD636AC58805a39A29b3B1C4_NFTMarketplace.sol#L544)
+filtered
 require(msg.value==bidAmount,"")
 [Code File](contracts/mainnet/bc/bc3Fc7bf165456d059012Cd9873F2999Bdd4de56_EKotketNFTPlatformRenting.sol#L54)
+filtered
 require(_dayInPeriod>0,"")
 [Code File](contracts/mainnet/bc/bc3Fc7bf165456d059012Cd9873F2999Bdd4de56_EKotketNFTPlatformRenting.sol#L102)
+TokenInUpperBound
 require(_startAt>depositItemInfoMap[_tokenId].endAt,"")
 [Code File](contracts/mainnet/bc/bc3Fc7bf165456d059012Cd9873F2999Bdd4de56_EKotketNFTPlatformRenting.sol#L116)
+TokenInUpperBound
 require(_current>depositItemInfoMap[_tokenId].endAt,"")
 [Code File](contracts/mainnet/88/887067939fA33E1c9B755B222fE92BAd2717691b_TransferManagerERC1155.sol#L23)
+isSenderOwner
 require(msg.sender==MNFTMarketplace,"")
 [Code File](contracts/mainnet/30/300d329C6A9DACd1A1369FaB1B84BD04b8C28789_EKotketSwap.sol#L42)
+filtered
 require(usdtAddress!=address(0)&&kotketTokenAddress!=address(0),"")
 [Code File](contracts/mainnet/30/300d329C6A9DACd1A1369FaB1B84BD04b8C28789_EKotketSwap.sol#L46)
+TokenOutUpperBound
 require(usdtBalance>=_amountUSDT,"")
 [Code File](contracts/mainnet/30/300d329C6A9DACd1A1369FaB1B84BD04b8C28789_EKotketSwap.sol#L49)
+filtered
 require(usdtAllowance>=_amountUSDT,"")
 [Code File](contracts/mainnet/30/300d329C6A9DACd1A1369FaB1B84BD04b8C28789_EKotketSwap.sol#L53)
+filtered
 require(amountKOKE>0,"")
 [Code File](contracts/mainnet/30/300d329C6A9DACd1A1369FaB1B84BD04b8C28789_EKotketSwap.sol#L57)
+TokenOutUpperBound
 require(kokeBalance>=amountKOKE,"")
 [Code File](contracts/mainnet/30/300d329C6A9DACd1A1369FaB1B84BD04b8C28789_EKotketSwap.sol#L60)
+filtered
 require(kokeAllowance>=amountKOKE,"")
 [Code File](contracts/mainnet/30/300d329C6A9DACd1A1369FaB1B84BD04b8C28789_EKotketSwap.sol#L76)
+TokenOutUpperBound
 require(kokeBalance>=_amountKOKE,"")
 [Code File](contracts/mainnet/30/300d329C6A9DACd1A1369FaB1B84BD04b8C28789_EKotketSwap.sol#L79)
+filtered
 require(kokeAllowance>=_amountKOKE,"")
 [Code File](contracts/mainnet/30/300d329C6A9DACd1A1369FaB1B84BD04b8C28789_EKotketSwap.sol#L83)
+filtered
 require(amountUSDT>0,"")
 [Code File](contracts/mainnet/30/300d329C6A9DACd1A1369FaB1B84BD04b8C28789_EKotketSwap.sol#L87)
+TokenOutUpperBound
 require(usdtBalance>=amountUSDT,"")
 [Code File](contracts/mainnet/30/300d329C6A9DACd1A1369FaB1B84BD04b8C28789_EKotketSwap.sol#L90)
+filtered
 require(usdtAllowance>=amountUSDT,"")
 [Code File](contracts/mainnet/f5/f577959c9071751599b4596c299168d576a55428_NFTMarketplace.sol#L211)
+Ignore: protocol-specific
 require(_initializing||_isConstructor()||!_initialized,"")
 [Code File](contracts/mainnet/f5/f577959c9071751599b4596c299168d576a55428_NFTMarketplace.sol#L449)
+Ignore: safe math
 require(b<=a,"")
 [Code File](contracts/mainnet/f5/f577959c9071751599b4596c299168d576a55428_NFTMarketplace.sol#L483)
+filtered
 require(b>0,"")
 [Code File](contracts/mainnet/f5/f577959c9071751599b4596c299168d576a55428_NFTMarketplace.sol#L1206)
+Ignore: protocol-specific
 require(set._values.length>index,"")
 [Code File](contracts/mainnet/f5/f577959c9071751599b4596c299168d576a55428_NFTMarketplace.sol#L1639)
+filtered
 require(signer!=address(0),"")
 [Code File](contracts/mainnet/f5/f577959c9071751599b4596c299168d576a55428_NFTMarketplace.sol#L3327)
+Ignore: enforce specification
 require(!isPaused,"")
 [Code File](contracts/mainnet/f5/f577959c9071751599b4596c299168d576a55428_NFTMarketplace.sol#L3333)
+Ignore: enforce specification
 require(_sender==owner(),"")
 [Code File](contracts/mainnet/f5/f577959c9071751599b4596c299168d576a55428_NFTMarketplace.sol#L3437)
+filtered
 require(_priceInWei>0,"")
 [Code File](contracts/mainnet/f5/f577959c9071751599b4596c299168d576a55428_NFTMarketplace.sol#L3438)
+filtered
 require(msg.value==nftListingFee,"")
 [Code File](contracts/mainnet/f5/f577959c9071751599b4596c299168d576a55428_NFTMarketplace.sol#L3489)
+filtered
 require(_priceInErc20Token>0,"")
 [Code File](contracts/mainnet/f5/f577959c9071751599b4596c299168d576a55428_NFTMarketplace.sol#L3538)
+Ignore: protocol-specific
 require(_listedNftTokenIds.contains(_nftListingId),"")
 [Code File](contracts/mainnet/f5/f577959c9071751599b4596c299168d576a55428_NFTMarketplace.sol#L3552)
+Ignore: enforce specification
 require(nftListing.listedBy!=_sender,"")
 [Code File](contracts/mainnet/f5/f577959c9071751599b4596c299168d576a55428_NFTMarketplace.sol#L3556)
+filtered
 require(nftListing.paymentType==0,"")
 [Code File](contracts/mainnet/f5/f577959c9071751599b4596c299168d576a55428_NFTMarketplace.sol#L3563)
+filtered
 require(msg.value==expectedAmountWei,"")
 [Code File](contracts/mainnet/f5/f577959c9071751599b4596c299168d576a55428_NFTMarketplace.sol#L3602)
+Ignore: enforce specification
 require(nftListing.paymentType==1,"")
 [Code File](contracts/mainnet/f5/f577959c9071751599b4596c299168d576a55428_NFTMarketplace.sol#L3669)
+Ignore: enforce specification
 require(hasUserLikedNftListing[_sender][_nftListingId],"")
 [Code File](contracts/mainnet/94/948B0DEA9Af7d78C29335f0E47BAa4799F643EBC_NFTMarketplace.sol#L1660)
+Ignore: protocol-specific
 require(!authorizedManagers.contains(_manager),"")
 [Code File](contracts/mainnet/94/948B0DEA9Af7d78C29335f0E47BAa4799F643EBC_NFTMarketplace.sol#L1667)
+Ignore: protocol-specific
 require(authorizedManagers.contains(_manager),"")
 [Code File](contracts/mainnet/94/948B0DEA9Af7d78C29335f0E47BAa4799F643EBC_NFTMarketplace.sol#L1674)
+Ignore: protocol-specific
 require(authorizedManagers.contains(msg.sender),"")
 [Code File](contracts/mainnet/94/948B0DEA9Af7d78C29335f0E47BAa4799F643EBC_NFTMarketplace.sol#L1675)
+DataFlow
 require(_fee<101,"")
 [Code File](contracts/mainnet/94/948B0DEA9Af7d78C29335f0E47BAa4799F643EBC_NFTMarketplace.sol#L1698)
+isSenderOwner
 require(collections[_collection].creator==msg.sender,"")
 [Code File](contracts/mainnet/94/948B0DEA9Af7d78C29335f0E47BAa4799F643EBC_NFTMarketplace.sol#L1714)
+isSenderOwner
 require(IERC721(_collection).ownerOf(_tokenId)==msg.sender,"")
 [Code File](contracts/mainnet/94/948B0DEA9Af7d78C29335f0E47BAa4799F643EBC_NFTMarketplace.sol#L1715)
+filtered
 require(_listingPrice>0,"")
 [Code File](contracts/mainnet/94/948B0DEA9Af7d78C29335f0E47BAa4799F643EBC_NFTMarketplace.sol#L1749)
+Ignore: enforce specification
 require(collection.listings[_tokenId].active,"")
 [Code File](contracts/mainnet/94/948B0DEA9Af7d78C29335f0E47BAa4799F643EBC_NFTMarketplace.sol#L1750)
+isSenderOwner
 require(collection.listings[_tokenId].seller==msg.sender,"")
 [Code File](contracts/mainnet/94/948B0DEA9Af7d78C29335f0E47BAa4799F643EBC_NFTMarketplace.sol#L1781)
+Ignore: enforce specification
 require(collection.listings[_tokenId].listing_price==msg.value,"")
 [Code File](contracts/mainnet/e8/e8397648725B057bed2bAd5f7Dd06B4d5A67bA46_EKotketNFT.sol#L49)
+filtered
 require(_winrate<=1000,"")
 [Code File](contracts/mainnet/e8/e8397648725B057bed2bAd5f7Dd06B4d5A67bA46_EKotketNFT.sol#L71)
+Ignore: protocol-specific
 require(!tokenExisted(_tokenId),"")
 [Code File](contracts/mainnet/e8/e8397648725B057bed2bAd5f7Dd06B4d5A67bA46_EKotketNFT.sol#L1193)
+Ignore: enforce specification
 require(operator!=_msgSender(),"")
 [Code File](contracts/mainnet/e8/e8397648725B057bed2bAd5f7Dd06B4d5A67bA46_EKotketNFT.sol#L1859)
+Ignore: protocol-specific
 require(index<ERC721.balanceOf(owner),"")
 [Code File](contracts/mainnet/e8/e8397648725B057bed2bAd5f7Dd06B4d5A67bA46_EKotketNFT.sol#L1892)
+Ignore: protocol-specific
 require(index<ERC721Enumerable.totalSupply(),"")
 [Code File](contracts/mainnet/f1/f14951143d367d91fc9d265c1315d755352f4029_NFTMarketplaceV2.sol#L830)
+Ignore: enforce specification
 require(address(this)!=__self,"")
 [Code File](contracts/mainnet/f1/f14951143d367d91fc9d265c1315d755352f4029_NFTMarketplaceV2.sol#L831)
+Ignore: enforce specification
 require(_getImplementation()==__self,"")
 [Code File](contracts/mainnet/f1/f14951143d367d91fc9d265c1315d755352f4029_NFTMarketplaceV2.sol#L840)
+Ignore: enforce specification
 require(address(this)==__self,"")
 [Code File](contracts/mainnet/f1/f14951143d367d91fc9d265c1315d755352f4029_NFTMarketplaceV2.sol#L2540)
+Ignore: protocol-specific
 require(AddressUpgradeable.isContract(newImplementation),"")
 [Code File](contracts/mainnet/f1/f14951143d367d91fc9d265c1315d755352f4029_NFTMarketplaceV2.sol#L2587)
+Ignore: enforce specification
 require(slot==_IMPLEMENTATION_SLOT,"")
 [Code File](contracts/mainnet/f1/f14951143d367d91fc9d265c1315d755352f4029_NFTMarketplaceV2.sol#L2654)
+Ignore: protocol-specific
 require(AddressUpgradeable.isContract(newBeacon),"")
 [Code File](contracts/mainnet/f1/f14951143d367d91fc9d265c1315d755352f4029_NFTMarketplaceV2.sol#L2687)
+Ignore: protocol-specific
 require(AddressUpgradeable.isContract(target),"")
 [Code File](contracts/mainnet/43/438AbFE329C0F38c02C971B8d34307beB06aD778_IndigenaNFTMarketplace.sol#L103)
+isSenderOwner
 require(msg.sender==proxyOwner(),"")
 [Code File](contracts/mainnet/43/438AbFE329C0F38c02C971B8d34307beB06aD778_IndigenaNFTMarketplace.sol#L121)
+filtered
 require(_newOwner!=address(0))
 [Code File](contracts/mainnet/43/438AbFE329C0F38c02C971B8d34307beB06aD778_IndigenaNFTMarketplace.sol#L185)
+Ignore: enforce specification
 require(currentImplementation!=_newImplementation)
 [Code File](contracts/mainnet/43/4388FB16452487572dd4094CbE0c52E686Aa3B4D_NFTMarketplaceV3.sol#L139)
+Ignore: enforce specification
 require(IERC721(nftContract).isApprovedForAll(msg.sender,address(this)),"")
 [Code File](contracts/mainnet/43/4388FB16452487572dd4094CbE0c52E686Aa3B4D_NFTMarketplaceV3.sol#L183)
+filtered
 require(itemId<=_itemCounter.current(),"")
 [Code File](contracts/mainnet/43/4388FB16452487572dd4094CbE0c52E686Aa3B4D_NFTMarketplaceV3.sol#L184)
+Ignore: enforce specification
 require(marketItems[itemId].state==State.Created,"")
 [Code File](contracts/mainnet/43/4388FB16452487572dd4094CbE0c52E686Aa3B4D_NFTMarketplaceV3.sol#L187)
+isSenderOwner
 require(item.seller==msg.sender,"")
 [Code File](contracts/mainnet/43/4388FB16452487572dd4094CbE0c52E686Aa3B4D_NFTMarketplaceV3.sol#L218)
+Ignore: enforce specification
 require(item.state==State.Created,"")
 [Code File](contracts/mainnet/43/4388FB16452487572dd4094CbE0c52E686Aa3B4D_NFTMarketplaceV3.sol#L219)
+Ignore: enforce specification
 require(amount==price,"")
 [Code File](contracts/mainnet/43/4388FB16452487572dd4094CbE0c52E686Aa3B4D_NFTMarketplaceV3.sol#L220)
+Ignore: enforce specification
 require(IERC721(nftContract).isApprovedForAll(item.seller,address(this)),"")
 [Code File](contracts/mainnet/43/4381D8191bE655C7FDaC93a741A06b8a972B47Dd_VinciNFTMarketplace.sol#L135)
+nonReEntrant
 require(!_locked,"")
 [Code File](contracts/mainnet/43/4381D8191bE655C7FDaC93a741A06b8a972B47Dd_VinciNFTMarketplace.sol#L158)
+filtered
 require(sales[_nftContract][_tokenId].owner!=address(0),"")
 [Code File](contracts/mainnet/43/4381D8191bE655C7FDaC93a741A06b8a972B47Dd_VinciNFTMarketplace.sol#L388)
+TokenOutUpperBound
 require(_erc20contract.balanceOf(address(this))>=amount,"")
 [Code File](contracts/mainnet/43/4381D8191bE655C7FDaC93a741A06b8a972B47Dd_VinciNFTMarketplace.sol#L399)
+DataFlow
 require(_fee<=10000,"")
 [Code File](contracts/mainnet/43/4381D8191bE655C7FDaC93a741A06b8a972B47Dd_VinciNFTMarketplace.sol#L409)
+filtered
 require(_marginSecondsDutchAuction>0,"")
 [Code File](contracts/mainnet/43/4381D8191bE655C7FDaC93a741A06b8a972B47Dd_VinciNFTMarketplace.sol#L428)
+Ignore: protocol-specific
 require(prices.length<=10,"")
 [Code File](contracts/mainnet/43/4381D8191bE655C7FDaC93a741A06b8a972B47Dd_VinciNFTMarketplace.sol#L429)
+filtered
 require(prices.length>0,"")
 [Code File](contracts/mainnet/43/4381D8191bE655C7FDaC93a741A06b8a972B47Dd_VinciNFTMarketplace.sol#L462)
+Ignore: protocol-specific
 require(_tokenIds.length<301,"")
 [Code File](contracts/mainnet/43/4381D8191bE655C7FDaC93a741A06b8a972B47Dd_VinciNFTMarketplace.sol#L495)
+Ignore: enforce specification
 require(_msgSender()==sales[_nftContract][_tokenId].owner,"")
 [Code File](contracts/mainnet/43/4381D8191bE655C7FDaC93a741A06b8a972B47Dd_VinciNFTMarketplace.sol#L541)
+filtered
 require(msg.value==0,"")
 [Code File](contracts/mainnet/43/4381D8191bE655C7FDaC93a741A06b8a972B47Dd_VinciNFTMarketplace.sol#L542)
+OracleRange
 require(erc20.balanceOf(_msgSender())>=price,"")
 [Code File](contracts/mainnet/43/4381D8191bE655C7FDaC93a741A06b8a972B47Dd_VinciNFTMarketplace.sol#L607)
+TokenOutUpperBound
 require(amount>=englishAuctions[_nftContract][_tokenId].amount,"")
 [Code File](contracts/mainnet/43/4381D8191bE655C7FDaC93a741A06b8a972B47Dd_VinciNFTMarketplace.sol#L622)
+filtered
 require(msg.value==amount,"")
 [Code File](contracts/mainnet/43/4381D8191bE655C7FDaC93a741A06b8a972B47Dd_VinciNFTMarketplace.sol#L719)
+OracleRange
 require(startPrice>endPrice,"")
 [Code File](contracts/mainnet/43/4381D8191bE655C7FDaC93a741A06b8a972B47Dd_VinciNFTMarketplace.sol#L720)
+filtered
 require(start<end,"")
 [Code File](contracts/mainnet/43/4381D8191bE655C7FDaC93a741A06b8a972B47Dd_VinciNFTMarketplace.sol#L799)
+OracleRange
 require(msg.value<price+marginSecondsDutchAuction*_priceDropPerSecondForDutchAuction(_nftContract,_tokenId),"")
 [Code File](contracts/mainnet/43/4381D8191bE655C7FDaC93a741A06b8a972B47Dd_VinciNFTMarketplace.sol#L826)
+Ignore: enforce specification
 require(_msgSender()==dutchAuctions[_nftContract][_tokenId].owner,"")
 [Code File](contracts/mainnet/43/4381D8191bE655C7FDaC93a741A06b8a972B47Dd_VinciNFTMarketplace.sol#L885)
+Ignore: protocol-specific
 require(isInEnglishAuction(_nftContract,tokenId),"")
 [Code File](contracts/mainnet/43/4381D8191bE655C7FDaC93a741A06b8a972B47Dd_VinciNFTMarketplace.sol#L905)
+Ignore: protocol-specific
 require(isInDutchAuction(_nftContract,tokenId),"")
 [Code File](contracts/mainnet/43/4381D8191bE655C7FDaC93a741A06b8a972B47Dd_VinciNFTMarketplace.sol#L915)
+Ignore: protocol-specific
 require(isBeingSold(_nftContract,tokenId),"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L85)
+filtered
 require(_from<_to,"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L202)
+filtered
 require(_balance>0,"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L203)
+TokenOutUpperBound
 require(_balance>=_amount,"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L204)
+filtered
 require(_user!=address(0),"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L212)
+filtered
 require(_totalBalance>0,"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L218)
+filtered
 require(_newFee<=1000,"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L230)
+filtered
 require(_max!=MAX_FRAGMENT&&_max>0,"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L234)
+filtered
 require(pool!=address(0),"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L235)
+Ignore: protocol-specific
 require(pool.isContract(),"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L245)
+filtered
 require(launchPad!=address(0),"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L246)
+Ignore: protocol-specific
 require(launchPad.isContract(),"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L254)
+Ignore: enforce specification
 require(_rootTokens[_tokenId],"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L259)
+isSenderOwner
 require(ownerOf(_tokenId)==msg.sender,"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L264)
+isSenderOwner
 require(msg.sender==yfiagPool,"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L269)
+filtered
 require(newPlatformFeeAddess!=address(0),"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L275)
+filtered
 require(_token==address(0)||_token.isContract(),"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L276)
+DataFlow
 require(_royalty<=maxRoyalties&&_royalty>=minRoyalties,"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L295)
+filtered
 require(tokenAddress[_rootTokenId]==address(0)||tokenAddress[_rootTokenId].isContract(),"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L296)
+Ignore: enforce specification
 require(_rootTokens[_rootTokenId],"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L309)
+Ignore: enforce specification
 require(!tokenStatus[_tokenId],"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L318)
+Ignore: enforce specification
 require(tokenStatus[_tokenId],"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L319)
+Ignore: enforce specification
 require(ownerOf(_tokenId)!=msg.sender,"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L320)
+filtered
 require(tokenAddress[_tokenId]==address(0),"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L337)
+Ignore: enforce specification
 require(prices[_tokenId]==msg.value,"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L537)
+isSenderOwner
 require(_launchPad==msg.sender,"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L542)
+Ignore: protocol-specific
 require(exists(_tokenId),"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L547)
+Ignore: enforce specification
 require(!_rootTokens[_tokenId],"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L552)
+Ignore: enforce specification
 require(!_fragmentTokens[_tokenId],"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L576)
+filtered
 require(_owner!=address(0),"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L604)
+Ignore: enforce specification
 require(to!=_owner,"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L621)
+Ignore: protocol-specific
 require(exists(tokenId),"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L736)
+Ignore: protocol-specific
 require(!exists(tokenId),"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L803)
+filtered
 require(accountBalance>0,"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L873)
+Ignore: protocol-specific
 require(index<ERC721.balanceOf(_owner),"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L888)
+Ignore: protocol-specific
 require(index<totalSupply(),"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L948)
+Ignore: protocol-specific
 require(ERC721.exists(tokenId),"")
 [Code File](contracts/mainnet/a6/A67219CF6D5e191B7974d2bE34303112B925975A_YFIAGNftMarketplace.sol#L958)
+filtered
 require(_user!=address(0))
 [Code File](contracts/mainnet/7b/7b380299C8eDA4527C83174918199d702611e876_APONFT.sol#L26)
+Ignore: protocol-specific
 require(ids.length<=idsLength,"")
 [Code File](contracts/mainnet/7b/7b380299C8eDA4527C83174918199d702611e876_APONFT.sol#L883)
+Ignore: enforce specification
 require(_checkOnERC721Received(address(0),to,tokenId,_data),"")
 [Code File](contracts/mainnet/7b/7b380299C8eDA4527C83174918199d702611e876_APONFT.sol#L1520)
+Ignore: protocol-specific
 require(hasRole(MINTER_ROLE,_msgSender()),"")
 [Code File](contracts/mainnet/7b/7b380299C8eDA4527C83174918199d702611e876_APONFT.sol#L1537)
+Ignore: protocol-specific
 require(hasRole(PAUSER_ROLE,_msgSender()),"")
 [Code File](contracts/mainnet/20/208E6482f79baAcdf7Dc80d75aaCe77C5fA8306D_CHDNFTMarketplace.sol#L1083)
+filtered
 require(presaleDatas[presaleCounter].endTime<_startTime)
 [Code File](contracts/mainnet/20/208E6482f79baAcdf7Dc80d75aaCe77C5fA8306D_CHDNFTMarketplace.sol#L1095)
+filtered
 require(_presaleTime<=presaleCounter)
 [Code File](contracts/mainnet/20/208E6482f79baAcdf7Dc80d75aaCe77C5fA8306D_CHDNFTMarketplace.sol#L1108)
+filtered
 require(msg.value==salesPrice,"")
 [Code File](contracts/mainnet/20/208E6482f79baAcdf7Dc80d75aaCe77C5fA8306D_CHDNFTMarketplace.sol#L1109)
+lastUpdate
 require(block.timestamp>=presaleDatas[_salesTime].startTime,"")
 [Code File](contracts/mainnet/20/208E6482f79baAcdf7Dc80d75aaCe77C5fA8306D_CHDNFTMarketplace.sol#L1110)
+lastUpdate
 require(block.timestamp<=presaleDatas[_salesTime].endTime,"")
 [Code File](contracts/mainnet/20/208E6482f79baAcdf7Dc80d75aaCe77C5fA8306D_CHDNFTMarketplace.sol#L1111)
+filtered
 require(_offerId>=presaleDatas[_salesTime].startId,"")
 [Code File](contracts/mainnet/20/208E6482f79baAcdf7Dc80d75aaCe77C5fA8306D_CHDNFTMarketplace.sol#L1112)
+filtered
 require(_offerId<=presaleDatas[_salesTime].endId,"")
 [Code File](contracts/mainnet/20/208E6482f79baAcdf7Dc80d75aaCe77C5fA8306D_CHDNFTMarketplace.sol#L1113)
+Ignore: enforce specification
 require(presaleFinished[_offerId]==false,"")
 [Code File](contracts/mainnet/20/208E6482f79baAcdf7Dc80d75aaCe77C5fA8306D_CHDNFTMarketplace.sol#L1114)
+filtered
 require(whiteList(presaleDatas[_salesTime].whiteListAddress).checkWhiteListRemainAmount(msg.sender)>=1)
 [Code File](contracts/mainnet/20/208E6482f79baAcdf7Dc80d75aaCe77C5fA8306D_CHDNFTMarketplace.sol#L1344)
+filtered
 require(whiteListValue[_walletAddress]==0)
 [Code File](contracts/mainnet/20/208E6482f79baAcdf7Dc80d75aaCe77C5fA8306D_CHDNFTMarketplace.sol#L1350)
+filtered
 require((whiteListValue[_walletAddress]-whiteListUsed[_walletAddress])>=_value)
 [Code File](contracts/mainnet/20/208E6482f79baAcdf7Dc80d75aaCe77C5fA8306D_CHDNFTMarketplace.sol#L1356)
+filtered
 require(whiteListValue[_walletAddress]!=0)
 [Code File](contracts/mainnet/20/208E6482f79baAcdf7Dc80d75aaCe77C5fA8306D_CHDNFTMarketplace.sol#L1363)
+filtered
 require(whiteListValue[_walletAddress]>=1)
 [Code File](contracts/mainnet/20/208E6482f79baAcdf7Dc80d75aaCe77C5fA8306D_CHDNFTMarketplace.sol#L1364)
+filtered
 require(_value>=1)
 [Code File](contracts/mainnet/20/208E6482f79baAcdf7Dc80d75aaCe77C5fA8306D_CHDNFTMarketplace.sol#L1372)
+filtered
 require(whiteListValue[_walletAddress]>whiteListUsed[_walletAddress])
 [Code File](contracts/mainnet/db/db891C608eeB12c1A0842Cb2A96BC58E65E5d971_NFTMarketplace.sol#L76)
+Ignore: enforce specification
 require(recoverSigner(message,signature)==_admin,"")
 [Code File](contracts/mainnet/db/db891C608eeB12c1A0842Cb2A96BC58E65E5d971_NFTMarketplace.sol#L952)
+filtered
 require(expireAt==0||expireAt>datetime,"")
 [Code File](contracts/mainnet/4d/4d28b1d8379f31edf9d9f28492ad720b0dc1a158_NftMarketplace.sol#L2195)
+Ignore: enforce specification
 require(address(token).isContract(),"")
 [Code File](contracts/mainnet/4d/4d28b1d8379f31edf9d9f28492ad720b0dc1a158_NftMarketplace.sol#L2569)
+filtered
 require(swap_.token==address(0),"")
 [Code File](contracts/mainnet/4d/4d28b1d8379f31edf9d9f28492ad720b0dc1a158_NftMarketplace.sol#L2581)
+filtered
 require(swaps[swapId].seller!=address(0),"")
 [Code File](contracts/mainnet/4d/4d28b1d8379f31edf9d9f28492ad720b0dc1a158_NftMarketplace.sol#L2582)
+isSenderOwner
 require(swaps[swapId].seller==msg.sender,"")
 [Code File](contracts/mainnet/4d/4d28b1d8379f31edf9d9f28492ad720b0dc1a158_NftMarketplace.sol#L2583)
+Ignore: enforce specification
 require(swaps[swapId].status==Status.None,"")
 [Code File](contracts/mainnet/1f/1fd402c590de2fcd0e9d637593100309dad44c68_PaybNftMarketplace.sol#L54)
+Ignore: protocol-specific
 require(_tokenErc20.isContract(),"")
 [Code File](contracts/mainnet/1f/1fd402c590de2fcd0e9d637593100309dad44c68_PaybNftMarketplace.sol#L63)
+filtered
 require(_newFee<10000,"")
 [Code File](contracts/mainnet/1f/1fd402c590de2fcd0e9d637593100309dad44c68_PaybNftMarketplace.sol#L79)
+filtered
 require(_royalty+platformFee<10000,"")
 [Code File](contracts/mainnet/1f/1fd402c590de2fcd0e9d637593100309dad44c68_PaybNftMarketplace.sol#L115)
+Ignore: enforce specification
 require(_price==msg.value,"")
 [Code File](contracts/mainnet/1f/1fd402c590de2fcd0e9d637593100309dad44c68_PaybNftMarketplace.sol#L120)
+OracleRange
 require(IERC20(tokenAddress[_tokenId]).balanceOf(msg.sender)>=_price,"")
 [Code File](contracts/mainnet/1f/1fd402c590de2fcd0e9d637593100309dad44c68_PaybNftMarketplace.sol#L178)
+isSenderOwner
 require(msg.sender==ownerOf(_tokenId),"")
 [Code File](contracts/mainnet/1f/1fd402c590de2fcd0e9d637593100309dad44c68_PaybNftMarketplace.sol#L179)
+filtered
 require(_newRoyalty>royalties[_tokenId]&&_newRoyalty<=10000&&_newRoyalty+platformFee<=10000,"")
 [Code File](contracts/mainnet/1f/1fd402c590de2fcd0e9d637593100309dad44c68_PaybNftMarketplace.sol#L187)
+Ignore: protocol-specific
 require(isLock(_tokenId),"")
 [Code File](contracts/mainnet/1f/1fd402c590de2fcd0e9d637593100309dad44c68_PaybNftMarketplace.sol#L194)
+Ignore: enforce specification
 require(ownerOf(_tokenId)==_to,"")
 [Code File](contracts/mainnet/1f/1fd402c590de2fcd0e9d637593100309dad44c68_PaybNftMarketplace.sol#L209)
+OracleRange
 require(IERC20(_token).balanceOf(msg.sender)>=_price,"")
 [Code File](contracts/mainnet/1f/1fd402c590de2fcd0e9d637593100309dad44c68_PaybNftMarketplace.sol#L219)
+filtered
 require(_token.isContract()||_token==address(0),"")
 [Code File](contracts/mainnet/1f/1fd402c590de2fcd0e9d637593100309dad44c68_PaybNftMarketplace.sol#L224)
+TokenOutUpperBound
 require(IERC20(_token).balanceOf(msg.sender)>=_amount,"")
 [Code File](contracts/mainnet/1f/1fd402c590de2fcd0e9d637593100309dad44c68_PaybNftMarketplace.sol#L1351)
+isSenderOwner
 require(admins[msg.sender]||owner==msg.sender,"")
 [Code File](contracts/mainnet/1f/1fd402c590de2fcd0e9d637593100309dad44c68_PaybNftMarketplace.sol#L1361)
+Ignore: protocol-specific
 require(!isLock(_tokenId),"")
 [Code File](contracts/mainnet/1f/1fd402c590de2fcd0e9d637593100309dad44c68_PaybNftMarketplace.sol#L1601)
+Ignore: protocol-specific
 require(ERC721.exists(tokenId))
 [Code File](contracts/mainnet/1f/1fd402c590de2fcd0e9d637593100309dad44c68_PaybNftMarketplace.sol#L1639)
+Ignore: protocol-specific
 require(!isAdmin(_user),"")
 [Code File](contracts/mainnet/ca/caE3aB3D711bccCaE4f2C58ce0F146EB8bB840Bf_NFTMarketplace.sol#L1487)
+Ignore: enforce specification
 require(!item.sold,"")
 [Code File](contracts/mainnet/ca/caE3aB3D711bccCaE4f2C58ce0F146EB8bB840Bf_NFTMarketplace.sol#L1488)
+Ignore: enforce specification
 require(item.status==ListingStatus.Active,"")
 [Code File](contracts/mainnet/ca/caE3aB3D711bccCaE4f2C58ce0F146EB8bB840Bf_NFTMarketplace.sol#L1524)
+Ignore: protocol-specific
 require(nftContracts.length==itemIds.length,"")
 [Code File](contracts/mainnet/ca/caE3aB3D711bccCaE4f2C58ce0F146EB8bB840Bf_NFTMarketplace.sol#L1525)
+filtered
 require(nftContracts.length>0,"")
 [Code File](contracts/mainnet/b8/B84579206c7c6F17c2f0F09fE36A0112Bb121471_EKotketNFTMarketPlace.sol#L36)
+filtered
 require(_serviceCommission<=1000,"")
 [Code File](contracts/mainnet/b8/B84579206c7c6F17c2f0F09fE36A0112Bb121471_EKotketNFTMarketPlace.sol#L56)
+Ignore: enforce specification
 require(saleItemInfoMap[_tokenId].owner==_msgSender(),"")
 [Code File](contracts/mainnet/b8/B84579206c7c6F17c2f0F09fE36A0112Bb121471_EKotketNFTMarketPlace.sol#L79)
+filtered
 require(saleItemInfoMap[_tokenId].owner!=address(0),"")
 [Code File](contracts/mainnet/b8/B84579206c7c6F17c2f0F09fE36A0112Bb121471_EKotketNFTMarketPlace.sol#L84)
+OracleRange
 require(weiAmount>=price,"")
 [Code File](contracts/mainnet/18/189651ffa5edc7e0bbb45c76d303dc9890b4741d_NFTMarketplace.sol#L556)
+filtered
 require(interfaceId!=0xffffffff,"")
 [Code File](contracts/mainnet/18/189651ffa5edc7e0bbb45c76d303dc9890b4741d_NFTMarketplace.sol#L788)
+isSenderOwner
 require(nft.ownerOf(tokenId)==msg.sender,"")
 [Code File](contracts/mainnet/18/189651ffa5edc7e0bbb45c76d303dc9890b4741d_NFTMarketplace.sol#L789)
+filtered
 require(_initialPrice>=0,"")
 [Code File](contracts/mainnet/18/189651ffa5edc7e0bbb45c76d303dc9890b4741d_NFTMarketplace.sol#L989)
+lastUpdate
 require(value>=minimumAcceptedBid&&block.timestamp<listIds[listId].endTime,"")
 [Code File](contracts/mainnet/18/189651ffa5edc7e0bbb45c76d303dc9890b4741d_NFTMarketplace.sol#L990)
+DataFlow
 require(ammo.balanceOf(msg.sender)>=minimumAcceptedBid,"")
 [Code File](contracts/mainnet/18/189651ffa5edc7e0bbb45c76d303dc9890b4741d_NFTMarketplace.sol#L997)
+OracleRange
 require(value>=price,"")
 [Code File](contracts/mainnet/18/189651ffa5edc7e0bbb45c76d303dc9890b4741d_NFTMarketplace.sol#L1030)
+lastUpdate
 require(block.timestamp>listIds[listId].endTime,"")
 [Code File](contracts/mainnet/18/189651ffa5edc7e0bbb45c76d303dc9890b4741d_NFTMarketplace.sol#L1031)
+isSenderOwner
 require(msg.sender==listIds[listId].currentWinner)
 [Code File](contracts/mainnet/18/189651ffa5edc7e0bbb45c76d303dc9890b4741d_NFTMarketplace.sol#L1032)
+OracleRange
 require(ammo.balanceOf(msg.sender)>=price,"")
 [Code File](contracts/mainnet/18/182fE1Af2E5a1a0FFe0BfE963dF263BE8BCA7860_NFTMarketplace.sol#L1368)
+Ignore: protocol-specific
 require(Address.isContract(_nftContract),"")
 [Code File](contracts/mainnet/18/182fE1Af2E5a1a0FFe0BfE963dF263BE8BCA7860_NFTMarketplace.sol#L1369)
+Ignore: enforce specification
 require(marketRegistrations[_nftContract]==nullBytes,"")
 [Code File](contracts/mainnet/18/182fE1Af2E5a1a0FFe0BfE963dF263BE8BCA7860_NFTMarketplace.sol#L1385)
+Ignore: protocol-specific
 require(_conductKeys.length==_prices.length,"")
 [Code File](contracts/mainnet/18/182fE1Af2E5a1a0FFe0BfE963dF263BE8BCA7860_NFTMarketplace.sol#L1391)
+Ignore: enforce specification
 require(sum==msg.value,"")
 [Code File](contracts/mainnet/18/182fE1Af2E5a1a0FFe0BfE963dF263BE8BCA7860_NFTMarketplace.sol#L1405)
+Ignore: enforce specification
 require(_conductKey==marketRegistrations[_nftContract]&&_conductKey!=nullBytes,"")
 [Code File](contracts/mainnet/18/182fE1Af2E5a1a0FFe0BfE963dF263BE8BCA7860_NFTMarketplace.sol#L1406)
+isSenderOwner
 require(msg.sender==_seller,"")
 [Code File](contracts/mainnet/18/182fE1Af2E5a1a0FFe0BfE963dF263BE8BCA7860_NFTMarketplace.sol#L1407)
+Ignore: enforce specification
 require(_status==ListingStatus.Active,"")
 [Code File](contracts/mainnet/18/182fE1Af2E5a1a0FFe0BfE963dF263BE8BCA7860_NFTMarketplace.sol#L1426)
+filtered
 require(_royaltyFeePercent+_marketFeePercent<=10000,"")
 [Code File](contracts/mainnet/11/115ac133b7267ea05d146caa64d4140425a43dc8_EmillionNftMarketPlace.sol#L1264)
+filtered
 require(balance>0,"")
 [Code File](contracts/mainnet/11/115ac133b7267ea05d146caa64d4140425a43dc8_EmillionNftMarketPlace.sol#L1340)
+isSenderOwner
 require(order.seller==msg.sender,"")
 [Code File](contracts/mainnet/7c/7Cf1651F4fc2381Da17F7eA8658Bb5a07CfefEC7_TNFTMarketplace.sol#L74)
+Ignore: protocol-specific
 require(hasRole(ROLE_ADMIN,msg.sender),"")
 [Code File](contracts/mainnet/7c/7Cf1651F4fc2381Da17F7eA8658Bb5a07CfefEC7_TNFTMarketplace.sol#L87)
+filtered
 require(_admin!=address(0),"")
 [Code File](contracts/mainnet/7c/7Cf1651F4fc2381Da17F7eA8658Bb5a07CfefEC7_TNFTMarketplace.sol#L92)
+filtered
 require(_tbnNFTAddress!=address(0),"")
 [Code File](contracts/mainnet/7c/7Cf1651F4fc2381Da17F7eA8658Bb5a07CfefEC7_TNFTMarketplace.sol#L93)
+filtered
 require(_oracleAddress!=address(0),"")
 [Code File](contracts/mainnet/7c/7Cf1651F4fc2381Da17F7eA8658Bb5a07CfefEC7_TNFTMarketplace.sol#L98)
+filtered
 require(_wethAddress!=address(0),"")
 [Code File](contracts/mainnet/7c/7Cf1651F4fc2381Da17F7eA8658Bb5a07CfefEC7_TNFTMarketplace.sol#L99)
+filtered
 require(_basisPointFee<10000,"")
 [Code File](contracts/mainnet/7c/7Cf1651F4fc2381Da17F7eA8658Bb5a07CfefEC7_TNFTMarketplace.sol#L114)
+filtered
 require(newWeth!=address(0),"")
 [Code File](contracts/mainnet/7c/7Cf1651F4fc2381Da17F7eA8658Bb5a07CfefEC7_TNFTMarketplace.sol#L119)
+filtered
 require(newOracle!=address(0),"")
 [Code File](contracts/mainnet/7c/7Cf1651F4fc2381Da17F7eA8658Bb5a07CfefEC7_TNFTMarketplace.sol#L146)
+filtered
 require(_tbnNftAddress!=address(0),"")
 [Code File](contracts/mainnet/7c/7Cf1651F4fc2381Da17F7eA8658Bb5a07CfefEC7_TNFTMarketplace.sol#L154)
+filtered
 require(_basisPointFee<=10000,"")
 [Code File](contracts/mainnet/7c/7Cf1651F4fc2381Da17F7eA8658Bb5a07CfefEC7_TNFTMarketplace.sol#L250)
+Ignore: enforce specification
 require(nftTokenAddress==tbnNftAddress,"")
 [Code File](contracts/mainnet/7c/7Cf1651F4fc2381Da17F7eA8658Bb5a07CfefEC7_TNFTMarketplace.sol#L293)
+Ignore: protocol-specific
 require(listingIds.contains(listingId),"")
 [Code File](contracts/mainnet/7c/7Cf1651F4fc2381Da17F7eA8658Bb5a07CfefEC7_TNFTMarketplace.sol#L329)
+filtered
 require(TBNAmount>0,"")
 [Code File](contracts/mainnet/7c/7Cf1651F4fc2381Da17F7eA8658Bb5a07CfefEC7_TNFTMarketplace.sol#L438)
+CallValueUpperBound
 require(msg.value>=fullCost,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2314)
+TokenOutUpperBound
 require(amount<=MAX_ROYALTY)
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2335)
+Ignore: protocol-specific
 require(!IERC165(nftContract).supportsInterface(0x2a55205a),"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2346)
+filtered
 require(_newPublic<=MAX_PROTOCOL_FEE)
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2352)
+filtered
 require(_newProfile<=MAX_PROTOCOL_FEE)
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2358)
+Ignore: enforce specification
 require(whitelistERC20[_token]!=_val)
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2374)
+filtered
 require(_discount<=10000)
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2391)
+filtered
 require(success&&data.length>=32)
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2415)
+Ignore: protocol-specific
 require(optionalNftAssets.length==1,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2416)
+Ignore: enforce specification
 require(optionalNftAssets[0].assetType.assetClass==LibAsset.ERC721_ASSET_CLASS,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2425)
+filtered
 require(success3,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2435)
+filtered
 require(success1&&success2,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2457)
+filtered
 require(nftBuyContract!=address(0))
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2458)
+filtered
 require(to!=address(0)&&from!=address(0))
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2464)
+filtered
 require(value!=0)
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2470)
+Ignore: protocol-specific
 require(whitelistERC20[token],"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2512)
+Ignore: enforce specification
 require(value==1,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2867)
+filtered
 require(order.maker!=address(0x0),"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2868)
+filtered
 require(order.start==0||order.start<block.timestamp,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2869)
+filtered
 require(order.end==0||order.end>block.timestamp,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2870)
+filtered
 require(order.makeAssets.length!=0,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2871)
+filtered
 require(order.takeAssets.length!=0,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2900)
+Ignore: protocol-specific
 require(signature.length==65,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L2948)
+isSenderOwner
 require(msg.sender==marketPlace)
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3192)
+Ignore: protocol-specific
 require(validateOrder(hash,order,sig))
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3203)
+filtered
 require(order.salt!=0)
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3271)
+isSenderOwner
 require(msg.sender==order.maker)
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3289)
+filtered
 require(_approvedOrdersByNonce[hash]==0)
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3314)
+Ignore: protocol-specific
 require(validationLogic.validateBuyNow(sellOrder,msg.sender))
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3315)
+filtered
 require(msg.sender!=sellOrder.maker,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3365)
+Ignore: protocol-specific
 require(marketplaceEvent.emitBuyNow(sellHash,sellOrder,v,r,s))
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3386)
+isSenderOwner
 require(msg.sender==sellOrder.maker||msg.sender==buyOrder.maker||aggregator[msg.sender],"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3387)
+Ignore: protocol-specific
 require(validationLogic.validateMatch_(sellOrder,buyOrder,msg.sender,false))
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3439)
+Ignore: protocol-specific
 require(marketplaceEvent.emitExecuteSwap(sellHash,buyHash,sellOrder,buyOrder,v,r,s))
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3507)
+Ignore: enforce specification
 require(buyMakeAddress==sellTakeAddress,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3605)
+Ignore: enforce specification
 require(!ETH_ASSET_USED,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3606)
+Ignore: enforce specification
 require(viewOnly||sender!=buyOrder.maker,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3618)
+Ignore: protocol-specific
 require(sellOrder.takeAssets.length==buyOrder.makeAssets.length,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3628)
+Ignore: enforce specification
 require(viewOnly||sender!=sellOrder.maker,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3642)
+Ignore: protocol-specific
 require(sellOrder.takeAssets.length==1,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3657)
+filtered
 require((sellOrder.taker==address(0)||sellOrder.taker==buyer),"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3658)
+filtered
 require(sellOrder.makeAssets.length!=0,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3659)
+filtered
 require(sellOrder.takeAssets.length!=0,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3664)
+filtered
 require(sellOrder.start!=0&&sellOrder.start<block.timestamp,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3665)
+filtered
 require(sellOrder.end!=0&&sellOrder.end>block.timestamp,"")
 [Code File](contracts/mainnet/6c/6Ca527a0b0864d1da179C5b5A9Ba90A5Bcfe09c9_NftMarketplace.sol#L3693)
+Ignore: enforce specification
 require(sellOrder.auctionType==LibSignature.AuctionType.Decreasing,"")
 [Code File](contracts/mainnet/1a/1a22d99d1853b8804ea5c95c87dfdef8a41f6c88_DentistCoinNFTMarketPlace.sol#L641)
+filtered
 require(_addressToCheck!=address(0),"")
 [Code File](contracts/mainnet/1a/1a22d99d1853b8804ea5c95c87dfdef8a41f6c88_DentistCoinNFTMarketPlace.sol#L766)
+Ignore: protocol-specific
 require(!dentistCoinNFT.exists(_tokenId),"")
 [Code File](contracts/mainnet/1a/1a22d99d1853b8804ea5c95c87dfdef8a41f6c88_DentistCoinNFTMarketPlace.sol#L833)
+filtered
 require(_newCategoryPrice>0,"")
 [Code File](contracts/mainnet/1a/1a2D6749877DD9C0dba47703ea12Eabffb69F9C0_EliteCruiseNFT.sol#L1335)
+filtered
 require(withheldSupply>0,"")
 [Code File](contracts/mainnet/1a/1a2D6749877DD9C0dba47703ea12Eabffb69F9C0_EliteCruiseNFT.sol#L1354)
+filtered
 require(availSupply>0,"")
 [Code File](contracts/mainnet/1a/1a2D6749877DD9C0dba47703ea12Eabffb69F9C0_EliteCruiseNFT.sol#L1355)
+MappingUpperBound
 require(mintedTotal[msg.sender]<maxCountPerWallet,"")
 [Code File](contracts/mainnet/1a/1a2D6749877DD9C0dba47703ea12Eabffb69F9C0_EliteCruiseNFT.sol#L1356)
+filtered
 require(msg.value==mintPrice,"")
 [Code File](contracts/mainnet/1a/1a2D6749877DD9C0dba47703ea12Eabffb69F9C0_EliteCruiseNFT.sol#L1382)
+filtered
 require(msg.sender!=address(0),"")
 [Code File](contracts/mainnet/1a/1a2D6749877DD9C0dba47703ea12Eabffb69F9C0_EliteCruiseNFT.sol#L1384)
+Ignore: protocol-specific
 require(_exists(_tokenId),"")
 [Code File](contracts/mainnet/1a/1a2D6749877DD9C0dba47703ea12Eabffb69F9C0_EliteCruiseNFT.sol#L1386)
+Ignore: enforce specification
 require(!allCruiseElite[_tokenId].isWithheld,"")
 [Code File](contracts/mainnet/1a/1a2D6749877DD9C0dba47703ea12Eabffb69F9C0_EliteCruiseNFT.sol#L1390)
+isSenderOwner
 require(tokenOwner==msg.sender,"")
 [Code File](contracts/mainnet/1a/1a2D6749877DD9C0dba47703ea12Eabffb69F9C0_EliteCruiseNFT.sol#L1442)
+filtered
 require(tokenOwner!=address(0),"")
 [Code File](contracts/mainnet/1a/1a2D6749877DD9C0dba47703ea12Eabffb69F9C0_EliteCruiseNFT.sol#L1446)
+Ignore: enforce specification
 require(tokenOwner!=msg.sender,"")
 [Code File](contracts/mainnet/1a/1a2D6749877DD9C0dba47703ea12Eabffb69F9C0_EliteCruiseNFT.sol#L1450)
+filtered
 require(msg.value==cruiseElite.price,"")
 [Code File](contracts/mainnet/1a/1a2D6749877DD9C0dba47703ea12Eabffb69F9C0_EliteCruiseNFT.sol#L1452)
+Ignore: enforce specification
 require(cruiseElite.isForSale,"")
 [Code File](contracts/mainnet/1a/1a2D6749877DD9C0dba47703ea12Eabffb69F9C0_EliteCruiseNFT.sol#L1454)
+filtered
 require(msg.sender!=cruiseOperationsWallet,"")
 [Code File](contracts/mainnet/1a/1a2D6749877DD9C0dba47703ea12Eabffb69F9C0_EliteCruiseNFT.sol#L1473)
+isSenderOwner
 require(msg.sender==cruiseOperationsWallet,"")
 [Code File](contracts/mainnet/1a/1a2D6749877DD9C0dba47703ea12Eabffb69F9C0_EliteCruiseNFT.sol#L1475)
+Ignore: enforce specification
 require(allCruiseElite[_tokenId].isWithheld,"")
 [Code File](contracts/mainnet/1a/1a2D6749877DD9C0dba47703ea12Eabffb69F9C0_EliteCruiseNFT.sol#L1477)
+filtered
 require(_to!=address(0),"")
 [Code File](contracts/mainnet/1a/1a2D6749877DD9C0dba47703ea12Eabffb69F9C0_EliteCruiseNFT.sol#L1497)
+isSenderOwner
 require(msg.sender==daoContract,"")
 [Code File](contracts/mainnet/1a/1a2D6749877DD9C0dba47703ea12Eabffb69F9C0_EliteCruiseNFT.sol#L1499)
+filtered
 require(cruiseSelect.votingCount>=_decreaseCount,"")
 [Code File](contracts/mainnet/1a/1ab6cb2780087feef3c61ad2c5e0cce43a8e93dd_NftMarketplace.sol#L141)
+Ignore: enforce specification
 require(royaltyTransfer,"")
 [Code File](contracts/mainnet/1a/1ab6cb2780087feef3c61ad2c5e0cce43a8e93dd_NftMarketplace.sol#L142)
+Ignore: enforce specification
 require(transfer,"")
 [Code File](contracts/mainnet/c3/C3585596b9276fe0FC8435Db30696D3C9642D920_ShibariumNftMarketplace.sol#L99)
+Ignore: enforce specification
 require(_owner==_msgSender(),"")
 [Code File](contracts/mainnet/c3/C3585596b9276fe0FC8435Db30696D3C9642D920_ShibariumNftMarketplace.sol#L238)
+Ignore: enforce specification
 require(!bots[from]&&!bots[to])
 [Code File](contracts/mainnet/c3/C3585596b9276fe0FC8435Db30696D3C9642D920_ShibariumNftMarketplace.sol#L253)
+TokenOutUpperBound
 require(amount<=_maxTxAmount,"")
 [Code File](contracts/mainnet/c3/C3585596b9276fe0FC8435Db30696D3C9642D920_ShibariumNftMarketplace.sol#L254)
+TokenOutUpperBound
 require(balanceOf(to)+amount<=_maxWalletSize,"")
 [Code File](contracts/mainnet/c3/C3585596b9276fe0FC8435Db30696D3C9642D920_ShibariumNftMarketplace.sol#L328)
+Ignore: enforce specification
 require(!tradingOpen,"")
 [Code File](contracts/mainnet/c3/C3585596b9276fe0FC8435Db30696D3C9642D920_ShibariumNftMarketplace.sol#L340)
+Ignore: enforce specification
 require(_msgSender()==_taxWallet)
 [Code File](contracts/mainnet/c3/C3585596b9276fe0FC8435Db30696D3C9642D920_ShibariumNftMarketplace.sol#L341)
+filtered
 require(_newFee<=_finalBuyTax&&_newFee<=_finalSellTax)
 [Code File](contracts/mainnet/c3/C3790515A1c3ecF2df4bA4875cF00200d8723487_BundNFTMarketPlace.sol#L122)
+isSenderOwner
 require(owner()==msg.sender,"")
 [Code File](contracts/mainnet/c3/C3790515A1c3ecF2df4bA4875cF00200d8723487_BundNFTMarketPlace.sol#L295)
+Ignore: enforce specification
 require(_msgSender()!=operator,"")
 [Code File](contracts/mainnet/c3/C3790515A1c3ecF2df4bA4875cF00200d8723487_BundNFTMarketPlace.sol#L718)
+DataFlow
 require(mintedNFT[RareNFT]<copiesRareNFT,"")
 [Code File](contracts/mainnet/c3/C3790515A1c3ecF2df4bA4875cF00200d8723487_BundNFTMarketPlace.sol#L719)
+OracleRange
 require(BundNFT.balanceOf(msg.sender)>=basePriceRareNFT.mul(_copiesNFT),"")
 [Code File](contracts/mainnet/c3/C3790515A1c3ecF2df4bA4875cF00200d8723487_BundNFTMarketPlace.sol#L730)
+DataFlow
 require(mintedNFT[SpecialNFT]<copiesSpecialNFT,"")
 [Code File](contracts/mainnet/c3/C3790515A1c3ecF2df4bA4875cF00200d8723487_BundNFTMarketPlace.sol#L731)
+OracleRange
 require(BundNFT.balanceOf(msg.sender)>=basePriceSpecialNFT.mul(_copiesNFT),"")
 [Code File](contracts/mainnet/c3/C3790515A1c3ecF2df4bA4875cF00200d8723487_BundNFTMarketPlace.sol#L742)
+DataFlow
 require(mintedNFT[LegendNFT]<copiesLegendNFT,"")
 [Code File](contracts/mainnet/c3/C3790515A1c3ecF2df4bA4875cF00200d8723487_BundNFTMarketPlace.sol#L743)
+OracleRange
 require(BundNFT.balanceOf(msg.sender)>=basePriceLegendNFT,"")
 [Code File](contracts/mainnet/c3/C3790515A1c3ecF2df4bA4875cF00200d8723487_BundNFTMarketPlace.sol#L754)
+OracleRange
 require(BundNFT.balanceOf(address(this))>=basePriceLegendNFT,"")
 [Code File](contracts/mainnet/c3/C3790515A1c3ecF2df4bA4875cF00200d8723487_BundNFTMarketPlace.sol#L760)
+filtered
 require(BundNFT.balanceOf(address(this))>0,"")
 [Code File](contracts/mainnet/02/02d06e8a3348f5d277d9ff3160c8d3017aa0c4ca_NFTMarketplace.sol#L1786)
+filtered
 require(bytes(_name).length>0&&bytes(_symbol).length>0&&bytes(_initBaseURI).length>0)
 [Code File](contracts/mainnet/02/02d06e8a3348f5d277d9ff3160c8d3017aa0c4ca_NFTMarketplace.sol#L1802)
+TokenOutUpperBound
 require(amount<=lastBalance)
 [Code File](contracts/mainnet/02/02d06e8a3348f5d277d9ff3160c8d3017aa0c4ca_NFTMarketplace.sol#L1814)
+Ignore: enforce specification
 require(!voucher.isAuction)
 [Code File](contracts/mainnet/02/02d06e8a3348f5d277d9ff3160c8d3017aa0c4ca_NFTMarketplace.sol#L1818)
+isSenderOwner
 require(_signer==msg.sender&&_signer==voucher.target)
 [Code File](contracts/mainnet/02/02d06e8a3348f5d277d9ff3160c8d3017aa0c4ca_NFTMarketplace.sol#L1834)
+Ignore: enforce specification
 require(voucher.isRedeem&&voucher.isForSale)
 [Code File](contracts/mainnet/02/02d06e8a3348f5d277d9ff3160c8d3017aa0c4ca_NFTMarketplace.sol#L1836)
+filtered
 require(msg.value==voucher.price)
 [Code File](contracts/mainnet/02/02d06e8a3348f5d277d9ff3160c8d3017aa0c4ca_NFTMarketplace.sol#L1840)
+Ignore: enforce specification
 require(_signer!=msg.sender)
 [Code File](contracts/mainnet/02/02d06e8a3348f5d277d9ff3160c8d3017aa0c4ca_NFTMarketplace.sol#L1844)
+lastUpdate
 require(voucher.startDate<voucher.endDate&&(block.timestamp*1000)>voucher.endDate)
 [Code File](contracts/mainnet/02/02d06e8a3348f5d277d9ff3160c8d3017aa0c4ca_NFTMarketplace.sol#L1848)
+isSenderOwner
 require(voucher.isAuction?voucher.target==msg.sender:voucher.target==_signer)
 [Code File](contracts/mainnet/02/02d06e8a3348f5d277d9ff3160c8d3017aa0c4ca_NFTMarketplace.sol#L1876)
+filtered
 require(msg.sender!=ownerAddress)
 [Code File](contracts/mainnet/02/02d06e8a3348f5d277d9ff3160c8d3017aa0c4ca_NFTMarketplace.sol#L1880)
+Ignore: enforce specification
 require(item.isForSale)
 [Code File](contracts/mainnet/02/02d06e8a3348f5d277d9ff3160c8d3017aa0c4ca_NFTMarketplace.sol#L1882)
+filtered
 require(msg.value==item.price)
 [Code File](contracts/mainnet/02/02d06e8a3348f5d277d9ff3160c8d3017aa0c4ca_NFTMarketplace.sol#L1908)
+isSenderOwner
 require(msg.sender==ERC721.ownerOf(tokenId))
 [Code File](contracts/mainnet/02/02d06e8a3348f5d277d9ff3160c8d3017aa0c4ca_NFTMarketplace.sol#L1936)
+Ignore: protocol-specific
 require(changeToIsForSale?!item.isForSale:item.isForSale)
 [Code File](contracts/mainnet/02/02d06e8a3348f5d277d9ff3160c8d3017aa0c4ca_NFTMarketplace.sol#L2154)
+filtered
 require(newSc<100000)
 [Code File](contracts/mainnet/02/02d06e8a3348f5d277d9ff3160c8d3017aa0c4ca_NFTMarketplace.sol#L2248)
+filtered
 require(price>0)
 [Code File](contracts/mainnet/3d/3dc7941f028f7b5e862c8d04960d154be31bec0a_InseparableNFTMarketplace.sol#L3322)
+Ignore: enforce specification
 require(payable(msg.sender).send(address(this).balance))
 [Code File](contracts/mainnet/d4/D4D33d92b26897863725E31267f18309B27851e3_NftMarketplace.sol#L2355)
+filtered
 require(_newFee<=MAX_PROTOCOL_FEE)
 [Code File](contracts/mainnet/d4/D4D33d92b26897863725E31267f18309B27851e3_NftMarketplace.sol#L2463)
+filtered
 require(params.to!=address(0)&&params.from!=address(0))
 [Code File](contracts/mainnet/d4/D4D33d92b26897863725E31267f18309B27851e3_NftMarketplace.sol#L2470)
+Ignore: enforce specification
 require(hasGK&&hasProfile,"")
 [Code File](contracts/mainnet/d4/D4D33d92b26897863725E31267f18309B27851e3_NftMarketplace.sol#L2493)
+Ignore: protocol-specific
 require(params.optionalNftAssets.length==1,"")
 [Code File](contracts/mainnet/d4/D4D33d92b26897863725E31267f18309B27851e3_NftMarketplace.sol#L2494)
+Ignore: enforce specification
 require(params.optionalNftAssets[0].assetType.assetClass==LibAsset.ERC721_ASSET_CLASS,"")
 [Code File](contracts/mainnet/89/89fa42af265b654ea163c13abb073efbc16243d6_NFTMarketplace.sol#L2183)
+Ignore: enforce specification
 require(isSafeMintEnabled,"")
 [Code File](contracts/mainnet/89/89fa42af265b654ea163c13abb073efbc16243d6_NFTMarketplace.sol#L2219)
+OracleRange
 require(msg.value>=voucher.minPrice,"")
 [Code File](contracts/mainnet/89/89fa42af265b654ea163c13abb073efbc16243d6_NFTMarketplace.sol#L2269)
+Ignore: enforce specification
 require(!isContractLocked,"")
 [Code File](contracts/mainnet/44/446248C193f7abcD35C30E2f3475b0792b1B3643_PhynomNFTMarketplace.sol#L82)
+filtered
 require(royalityPerc<=100,"")
 [Code File](contracts/mainnet/44/446248C193f7abcD35C30E2f3475b0792b1B3643_PhynomNFTMarketplace.sol#L83)
+lastUpdate
 require(!_isOnAuction||_bidEndTime>block.timestamp,"")
 [Code File](contracts/mainnet/44/446248C193f7abcD35C30E2f3475b0792b1B3643_PhynomNFTMarketplace.sol#L84)
+isSenderOwner
 require(IERC721(nftContractAddress).ownerOf(tokenId)==msg.sender,"")
 [Code File](contracts/mainnet/44/446248C193f7abcD35C30E2f3475b0792b1B3643_PhynomNFTMarketplace.sol#L139)
+Ignore: enforce specification
 require(!idToMarketItem[itemId].isOnAuction,"")
 [Code File](contracts/mainnet/44/446248C193f7abcD35C30E2f3475b0792b1B3643_PhynomNFTMarketplace.sol#L140)
+Ignore: enforce specification
 require(!idToMarketItem[itemId].sold,"")
 [Code File](contracts/mainnet/44/446248C193f7abcD35C30E2f3475b0792b1B3643_PhynomNFTMarketplace.sol#L142)
+filtered
 require(msg.sender!=idToMarketItem[itemId].seller,"")
 [Code File](contracts/mainnet/44/446248C193f7abcD35C30E2f3475b0792b1B3643_PhynomNFTMarketplace.sol#L171)
+Ignore: enforce specification
 require(idToMarketItem[itemId].isOnAuction,"")
 [Code File](contracts/mainnet/44/446248C193f7abcD35C30E2f3475b0792b1B3643_PhynomNFTMarketplace.sol#L172)
+lastUpdate
 require(idToMarketItem[itemId].bidEndTime>block.timestamp,"")
 [Code File](contracts/mainnet/44/446248C193f7abcD35C30E2f3475b0792b1B3643_PhynomNFTMarketplace.sol#L175)
+OracleRange
 require(msg.value>=price&&msg.value>highestBidderMapping[itemId].amount,"")
 [Code File](contracts/mainnet/44/446248C193f7abcD35C30E2f3475b0792b1B3643_PhynomNFTMarketplace.sol#L190)
+lastUpdate
 require(idToMarketItem[itemId].bidEndTime<=block.timestamp,"")
 [Code File](contracts/mainnet/44/446248C193f7abcD35C30E2f3475b0792b1B3643_PhynomNFTMarketplace.sol#L196)
+isSenderOwner
 require(highestBidderMapping[itemId].bidderAddr==msg.sender,"")
 [Code File](contracts/mainnet/44/446248C193f7abcD35C30E2f3475b0792b1B3643_PhynomNFTMarketplace.sol#L295)
+Ignore: enforce specification
 require(_newNftContract!=nftContractAddress,"")
 [Code File](contracts/mainnet/44/446248C193f7abcD35C30E2f3475b0792b1B3643_PhynomNFTMarketplace.sol#L317)
+Ignore: enforce specification
 require(listingFee!=_listingPercentage,"")
 [Code File](contracts/mainnet/44/446248C193f7abcD35C30E2f3475b0792b1B3643_PhynomNFTMarketplace.sol#L318)
+filtered
 require(_listingPercentage<=200,"")
 [Code File](contracts/mainnet/25/255Fa6E3C319b5C27317bF3eEd08BAa22F0D0D06_ShibariumNFTMarketplace.sol#L365)
+Ignore: enforce specification
 require(from==owner(),"")
 [Code File](contracts/mainnet/25/255Fa6E3C319b5C27317bF3eEd08BAa22F0D0D06_ShibariumNFTMarketplace.sol#L371)
+TokenOutUpperBound
 require(balanceOf(to)+amount<_maxWalletSize,"")
 [Code File](contracts/mainnet/25/255Fa6E3C319b5C27317bF3eEd08BAa22F0D0D06_ShibariumNFTMarketplace.sol#L439)
+Ignore: enforce specification
 require(_msgSender()==_developmentWalletAddress||_msgSender()==_marketingWalletAddress)
 [Code File](contracts/mainnet/25/255Fa6E3C319b5C27317bF3eEd08BAa22F0D0D06_ShibariumNFTMarketplace.sol#L577)
+filtered
 require(totalFees<=100,"")
 [Code File](contracts/mainnet/29/295d92eddbd98767d7424687439b67bef16a52d3_SelectCruiseNFT.sol#L1387)
+Ignore: enforce specification
 require(!allCruiseSelect[_tokenId].isWithheld,"")
 [Code File](contracts/mainnet/29/295d92eddbd98767d7424687439b67bef16a52d3_SelectCruiseNFT.sol#L1452)
+filtered
 require(msg.value==cruiseSelect.price,"")
 [Code File](contracts/mainnet/29/295d92eddbd98767d7424687439b67bef16a52d3_SelectCruiseNFT.sol#L1454)
+Ignore: enforce specification
 require(cruiseSelect.isForSale,"")
 [Code File](contracts/mainnet/29/295d92eddbd98767d7424687439b67bef16a52d3_SelectCruiseNFT.sol#L1476)
+Ignore: enforce specification
 require(allCruiseSelect[_tokenId].isWithheld,"")
 [Code File](contracts/mainnet/29/295d92eddbd98767d7424687439b67bef16a52d3_SelectCruiseNFT.sol#L1500)
+filtered
 require(cruiseSelect.votingCount>0,"")
 all require statements: 
 720
