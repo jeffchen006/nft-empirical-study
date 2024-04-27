@@ -45,7 +45,7 @@ setTransferProxy (2)
 setCollectionCreator (1)
 setCollectionCreatorFee (1)
 setNewRoyalty (1)
-setFeePortion (1).
+setFeePortion (1)
 
 
 
