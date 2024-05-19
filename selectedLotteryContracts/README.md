@@ -5,22 +5,11 @@
 Denial of Service (DoS) bug:
 
 
-
-You can send Ether to other contracts by
-
-transfer (2300 gas, throws error)
-send (2300 gas, returns bool)
-call (forward all gas or set gas, returns bool)
-
-
-
 if we don't pay winner, the game cannot proceed. 
 
-but it uses winner.transfer(balance) to pay the winner, which could always revert if the winner is a contract that has a revert in its fallback function. 
+if we pay winner, it uses winner.transfer(balance) to pay the winner, which could always revert if the winner is a contract that has a revert in its fallback function. 
 
 ```solidity
-
-
 // Choose a winner and pay him
 function payWinner() internal returns (address) {
     uint256 balance = address(this).balance;
