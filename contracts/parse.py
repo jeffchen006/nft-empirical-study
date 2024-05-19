@@ -273,12 +273,21 @@ if __name__ == "__main__":
     # collectInvariantGuards(nft_marketplace_contracts) 
 
 
-    energy_contracts = ['ad/ADc6cfA74Bc2547DE15d7505C1aC1cF7BB4BEF14_GreenEnergyToken.sol', '95/95f8eaca2144583e2eb93d66fb13909d07f1a37f_Lithereum.sol', 'ff/ffb3518f60a967839e5ba5b2908c5d6840632c0f_Thera.sol', '36/368ddbe57405eae0d969152a449c013d2c79bf91_TheraAether.sol', '8b/8b9d4a796c55a28e65eb276d7ec016f5cd6a4116_GreenEnergyToken.sol', '71/718916cfd58297fbe92cbd9c5231ff7912327b66_TheraAether.sol', 'e8/e89a194d366a3f18b06ced6474dc7daba66efa83_QuantumEnergy.sol', '91/9157494ecd62333b03c348efa9e7a5af03f87476_EtherKnightGame.sol', '44/44cbf53666ee06327869ff06a10205f83c76ac58_FantasyHeroes.sol', 'ce/ceaf9dfe40f9c0ba586f2990c4b33c4c98a53d8b_QuantumEnergy.sol']
-    # # copy all energy trading contracts to a new folder selectedEnergyTradingContracts
-    # for contract in energy_contracts:
-    #     command = "cp " + CONTRACT_DIR + contract + " " + CONTRACT_DIR + "../../selectedEnergyTradingContracts/"
-    #     print(command)
-    #     os.system(command)
+    energy_contracts = ['ad/ADc6cfA74Bc2547DE15d7505C1aC1cF7BB4BEF14_GreenEnergyToken.sol', \
+                        '95/95f8eaca2144583e2eb93d66fb13909d07f1a37f_Lithereum.sol', \
+                        'ff/ffb3518f60a967839e5ba5b2908c5d6840632c0f_Thera.sol', \
+                        '36/368ddbe57405eae0d969152a449c013d2c79bf91_TheraAether.sol', \
+                        '8b/8b9d4a796c55a28e65eb276d7ec016f5cd6a4116_GreenEnergyToken.sol', \
+                        '71/718916cfd58297fbe92cbd9c5231ff7912327b66_TheraAether.sol', \
+                        'e8/e89a194d366a3f18b06ced6474dc7daba66efa83_QuantumEnergy.sol', \
+                        '91/9157494ecd62333b03c348efa9e7a5af03f87476_EtherKnightGame.sol', \
+                        '44/44cbf53666ee06327869ff06a10205f83c76ac58_FantasyHeroes.sol', \
+                        'ce/ceaf9dfe40f9c0ba586f2990c4b33c4c98a53d8b_QuantumEnergy.sol']
+    # copy all energy trading contracts to a new folder selectedEnergyTradingContracts
+    for contract in energy_contracts:
+        command = "cp " + CONTRACT_DIR + contract + " " + CONTRACT_DIR + "../../selectedEnergyTradingContracts/"
+        print(command)
+        os.system(command)
     
     countFrequency(energy_contracts)   
     # collectInvariantGuards(energy_contracts) 

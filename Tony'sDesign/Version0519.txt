@@ -1,0 +1,87 @@
+built in data types
+
+Token
+Party/User
+Price
+Integer
+String
+
+ListOfUser     This is basically an array but specifically for users. Will be implemented as a mapping most likely,  useful for privitized sales
+List/Mapping/Dict,   not sure yet, but if there is this then we would need a for/while loop?
+List of built-in functions:
+
+
+rejectRequest(string rejectionMessage)
+addItemToListing(Token _token)
+removeItemToListing(Token _token)
+isOwner(Token _token, User _seller)
+transfer(User _from, User _to, Token _token, String _message)
+getMsgSender()    //Can only be used in a function    msg.sender
+getValueSentWithMessage()     //can only be used in a function
+getMarketPlace()        //return the address of this marketplace   a better name could be here() ?
+tokenExistInListing()
+tokenNotSold()
+
+
+////////////////////////////////////   Simple Trading Contract   ///////////////////////////////////////
+marketplace garageSale
+{
+    User owner;
+    constructor(User _owner)
+    {
+        owner = _owner;
+    }
+    Item Art
+    {
+        Token token;
+        Price price;
+        User  seller;
+    }
+    function createToken(Token _token, Integer _price )
+    {
+        if (isOwner(_token,getMsgSender())==1)
+        {
+            Integer minPrice = 100;
+            if (_price < minPrice)
+            {
+                rejectRequest("Price Too Low");
+            }
+            else
+            {
+                Art temporaryVariable;
+                temporaryVariable.token = _token;
+                temporaryVariable._price = _price;
+                temporaryVariable.seller = getMsgSender();
+                transfer(getMsgSender(),getMarketPlace(),_token);
+                addItemToListing(temporaryVariable);
+            }
+        }
+        else:
+        {
+            rejectRequest("You are not the owner");
+        }
+    }
+    function cancelToken(Art _artToBeCanceled)
+    {
+        if (getMsgSender()==_artToBeCanceled.seller)
+        {
+            removeItemFromListing(_artToBeCanceled);
+        }
+        else
+        {
+            rejectRequest("You are not the owner");
+        }
+    }
+    function sellToken(Art _artToBeSold)
+    {
+        if (getValueSentWithMessage()>= _artToBeSold.price)
+        {
+            removeTokenFromListing(_artToBeSold);
+            transfer(getMarketPlace(),getMsgSender(),_artToBeSold.token);
+        }
+        else
+        {
+            rejectRequest("Not Enough Money");
+        }
+    }
+}
