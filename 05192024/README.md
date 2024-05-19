@@ -10,7 +10,7 @@ We should either ash Aron to provide us more guidance on how to search energy tr
 
 The reasons I selected lottery smart contracts are:
 
-(i) Lottery Smart Contracts are popular: I find 955 instances of lottery smart contracts from the open sourced smart contracts on EtherScan.
+(i) Lottery Smart Contracts are popular: I find 955 instances of lottery smart contracts from the open sourced smart contracts on EtherScan. They are collected under the [folder](../selectedLotteryContracts/)
 
 (ii) Lottery Smart Contracts are simple and have universal features: almost all of them has a process of buying tickets, drawing winners, and distributing rewards. 
 
